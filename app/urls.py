@@ -15,8 +15,19 @@ Including another URLconf
 """
 
 from django.urls import path
-from .views import student_view
+from .views import (
+    student_view,
+    student_detail_view,
+    CourseView,
+    CourseUpdateView,
+    UserListView,
+)
 
 urlpatterns = [
-    path('', student_view),
+    path("student/", student_view, name="student_list"),
+    path("student/<int:pk>/", student_detail_view, name="student_detail"),
+    # Apiview
+    path("course/", CourseView.as_view(), name="course_list"),
+    path("course/<int:pk>", CourseUpdateView.as_view(), name="course_update"),
+    path("user/", UserListView.as_view(), name="user_list_view"),
 ]
