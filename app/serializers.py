@@ -1,13 +1,19 @@
 """ serializers class """
 from datetime import date
+from enum import unique
 from rest_framework import serializers
 from django.contrib.auth.models import User
+from rest_framework.validators import UniqueValidator
 
-from .models import Student, Course
+from .models import Student, Course, Movie
 
 
 class StudentSerializer(serializers.ModelSerializer):
     """student serializer"""
+
+    name = serializers.CharField(
+        validators=[UniqueValidator(queryset=Student.objects.all())]
+    )
 
     def validate(self, attrs):
         """custom validation"""
@@ -15,6 +21,12 @@ class StudentSerializer(serializers.ModelSerializer):
             raise serializers.ValidationError(
                 {"dob": "Please enter valid date of birth"}
             )
+
+        if len(attrs.get("name")) < 4:
+            raise serializers.ValidationError(
+                {"name": "Please enter at least 3 char name"}
+            )
+
         return super().validate(attrs)
 
     class Meta:
@@ -25,28 +37,92 @@ class StudentSerializer(serializers.ModelSerializer):
 
 
 class CourseSerializer(serializers.ModelSerializer):
-    """ course serializer """
+    """course serializer"""
 
-    student = StudentSerializer(read_only=True)
+    # student = StudentSerializer(read_only=True)
 
     class Meta:
         """meta info"""
 
         model = Course
         fields = "__all__"
+        depth = 1
 
 
 class UserSerializer(serializers.Serializer):
-    """ user serializer"""
+    """user serializer"""
 
-    username = serializers.CharField()
-    password = serializers.CharField(write_only = True)
+    def check_lenght(value):
+        if len(value) < 3:
+            raise serializers.ValidationError("at least 3 char in username")
+
+    # id = serializers.SerializerMethodField( )
+    username = serializers.CharField(validators=[check_lenght])
+    password = serializers.CharField(write_only=True)
+
+    # def get_id(self, obj):
+    #     print(obj)
+    #     return obj.id
 
     def create(self, validated_data):
-        """ create user """
+        """create user"""
+        self.check_unique_username(validated_data.get("username"))
         return User.objects.create(**validated_data)
+
+    def check_unique_username(self, username, id=None):
+        """check unique username"""
+        user_obj = User.objects.filter(username=username)
+        if id:
+            user_obj = user_obj.exclude(id=id)
+        if user_obj.exists():
+            raise serializers.ValidationError({"username": "Username already exist"})
+
+    def update(self, instance, validated_data):
+        """update method"""
+        self.check_unique_username(validated_data.get("username"), instance.id)
+        instance.username = validated_data.get("username")
+        instance.set_password(validated_data.get("password"))
+        return instance
+
+    def to_representation(self, instance):
+        """pass extra data"""
+        data = super().to_representation(instance)
+        data.update(id=instance.id)
+        return data
+
+    def save(self):
+        """save method"""
+        print("validate data ", self.validated_data)
+        return super().save()
 
     class Meta:
         """meta info"""
 
         fields = ["username"]
+
+
+class MovieSerializer(serializers.ModelSerializer):  # create class to serializer model
+    """movie serializer"""
+
+    creator = serializers.ReadOnlyField(source="creator.username")
+
+    class Meta:
+        """model meta info"""
+
+        model = Movie
+        fields = ("id", "title", "genre", "year", "creator")
+
+
+class UserModelSerializer(
+    serializers.ModelSerializer
+):  # create class to serializer user model
+    """user model serializer"""
+
+    # movies = serializers.PrimaryKeyRelatedField(many=True, queryset=Movie.objects.all())
+    movies = MovieSerializer(many=True)
+
+    class Meta:
+        """model meta info"""
+
+        model = User
+        fields = ("id", "username", "movies")

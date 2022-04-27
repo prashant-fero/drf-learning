@@ -2,7 +2,6 @@
 from datetime import date
 from django.db import models
 
-
 # Create your models here.
 
 
@@ -23,6 +22,7 @@ class Student(models.Model):
 
 
 class Course(models.Model):
+    """course model"""
 
     name = models.CharField(max_length=50)
     price = models.DecimalField(decimal_places=2, max_digits=5)
@@ -31,4 +31,23 @@ class Course(models.Model):
     )
 
     def __str__(self) -> str:
+        """return string"""
         return self.name
+
+
+class Movie(models.Model):
+    """movie model"""
+
+    title = models.CharField(max_length=100)
+    genre = models.CharField(max_length=100)
+    year = models.IntegerField()
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
+    creator = models.ForeignKey(
+        "auth.User", related_name="movies", on_delete=models.CASCADE
+    )
+
+    class Meta:
+        """meta info"""
+
+        ordering = ["-id"]

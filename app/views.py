@@ -7,14 +7,21 @@ from rest_framework.views import APIView
 from django.contrib.auth.models import User
 
 # custom
-from .serializers import StudentSerializer, CourseSerializer, UserSerializer
-from .models import Student, Course
+from .serializers import (
+    StudentSerializer,
+    CourseSerializer,
+    UserSerializer,
+    MovieSerializer,
+    UserModelSerializer,
+)
+from .models import Student, Course, Movie
 
 # Create your views here.
 @api_view(["GET", "POST"])
 def student_view(request):
     """student record create & fetch all student record"""
     if request.method == "GET":
+        student_obj = Student.objects.all()
         student_data = StudentSerializer(student_obj, many=True)
         return Response(student_data.data)
     else:
@@ -22,10 +29,9 @@ def student_view(request):
         student_obj = StudentSerializer(
             data=request.data, many=isinstance(request.data, list)
         )
-        if student_obj.is_valid():
+        if student_obj.is_valid(raise_exception=True):
             student_obj.save()
             return Response(student_obj.data, status=status.HTTP_201_CREATED)
-        return Response(student_obj.errors)
 
 
 @api_view(["GET", "PUT", "DELETE"])
@@ -86,7 +92,32 @@ class CourseUpdateView(generics.UpdateAPIView):
 
 
 class UserListView(generics.ListCreateAPIView):
-    """ user list view """ 
+    """user list view"""
+
     queryset = User.objects.all()
     serializer_class = UserSerializer
 
+
+class UserUpdateView(generics.UpdateAPIView):
+    """user update view"""
+
+    queryset = User.objects.all()
+    serializer_class = UserSerializer
+
+
+class ListCreateMovieAPIView(generics.ListCreateAPIView):
+    """create & list api view"""
+
+    serializer_class = MovieSerializer
+    queryset = Movie.objects.all()
+
+    def perform_create(self, serializer):
+        # Assign the user who created the movie
+        serializer.save(creator=self.request.user)
+
+
+class UserListApiView(generics.ListAPIView):
+    """user list api"""
+
+    serializer_class = UserModelSerializer
+    queryset = User.objects.all()

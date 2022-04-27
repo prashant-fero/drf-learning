@@ -21,6 +21,8 @@ from .views import (
     CourseView,
     CourseUpdateView,
     UserListView,
+    UserUpdateView,
+    UserListApiView,
 )
 
 urlpatterns = [
@@ -30,4 +32,6 @@ urlpatterns = [
     path("course/", CourseView.as_view(), name="course_list"),
     path("course/<int:pk>", CourseUpdateView.as_view(), name="course_update"),
     path("user/", UserListView.as_view(), name="user_list_view"),
+    path("users", UserListApiView.as_view(), name="user_list_view"),
+    path("user/<int:pk>", UserUpdateView.as_view(), name="user_update_view"),
 ]
