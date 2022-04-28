@@ -51,3 +51,52 @@ class Movie(models.Model):
         """meta info"""
 
         ordering = ["-id"]
+
+    def __str__(self) -> str:
+        return self.title
+
+
+class Album(models.Model):
+    """album"""
+
+    album_name = models.CharField(max_length=100)
+    artist = models.CharField(max_length=100)
+
+
+class Track(models.Model):
+    """track"""
+
+    album = models.ForeignKey(Album, related_name="tracks", on_delete=models.CASCADE)
+    order = models.IntegerField()
+    title = models.CharField(max_length=100)
+    duration = models.IntegerField()
+
+    class Meta:
+        unique_together = ["album", "order"]
+        ordering = ["order"]
+
+    def __str__(self):
+        return "%d: %s" % (self.order, self.title)
+
+
+class Resource(models.Model):
+    title = models.CharField(max_length=256)
+    content = models.TextField()
+    liked_by = models.ManyToManyField(to="auth.User")
+
+    def __str__(self):
+        return f"{self.title}"
+
+
+class ModelC(models.Model):
+    content = models.CharField(max_length=128)
+
+
+class ModelB(models.Model):
+    model_c = models.ForeignKey(to=ModelC, on_delete=models.CASCADE)
+    content = models.CharField(max_length=128)
+
+
+class ModelA(models.Model):
+    model_b = models.ForeignKey(to=ModelB, on_delete=models.CASCADE)
+    content = models.CharField(max_length=128)

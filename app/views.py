@@ -1,20 +1,28 @@
 """ view files """
+from multiprocessing import context
 from rest_framework.response import Response
 from rest_framework.decorators import api_view
 from rest_framework import status
 from rest_framework import generics
 from rest_framework.views import APIView
+from rest_framework.authentication import SessionAuthentication, BasicAuthentication
+from rest_framework.permissions import IsAuthenticated
 from django.contrib.auth.models import User
 
 # custom
 from .serializers import (
+    ModelASerializer,
     StudentSerializer,
     CourseSerializer,
     UserSerializer,
     MovieSerializer,
     UserModelSerializer,
+    AlbumSerializer,
+    MovieSerializer,
+    TrackSerializer,
+    ResourceSerializer,
 )
-from .models import Student, Course, Movie
+from .models import ModelA, Student, Course, Movie, Album, Track, Resource
 
 # Create your views here.
 @api_view(["GET", "POST"])
@@ -30,6 +38,7 @@ def student_view(request):
             data=request.data, many=isinstance(request.data, list)
         )
         if student_obj.is_valid(raise_exception=True):
+            print(student_obj.validated_data)
             student_obj.save()
             return Response(student_obj.data, status=status.HTTP_201_CREATED)
 
@@ -65,6 +74,9 @@ def student_detail_view(request, pk):
 
 class CourseView(APIView):
     """course view"""
+
+    authentication_classes = [SessionAuthentication, BasicAuthentication]
+    permission_classes = [IsAuthenticated]
 
     def get(self, request):
         """get all course"""
@@ -121,3 +133,53 @@ class UserListApiView(generics.ListAPIView):
 
     serializer_class = UserModelSerializer
     queryset = User.objects.all()
+
+
+class AlbumListView(generics.ListAPIView):
+
+    serializer_class = AlbumSerializer
+    queryset = Album.objects.all()
+
+
+class MoviesListView(generics.ListAPIView):
+
+    serializer_class = MovieSerializer
+    queryset = Movie.objects.all()
+
+
+class TrackListView(generics.ListAPIView):
+
+    serializer_class = TrackSerializer
+    queryset = Track.objects.all()
+
+
+class ExampleView(APIView):
+    authentication_classes = [SessionAuthentication, BasicAuthentication]
+    permission_classes = [IsAuthenticated]
+
+    def get(self, request, format=None):
+        content = {
+            "user": str(request.user),  # `django.contrib.auth.User` instance.
+            "auth": str(request.auth),  # None
+        }
+        return Response(content)
+
+
+class HelloView(APIView):
+    permission_classes = (IsAuthenticated,)  # <-- And here
+
+    def get(self, request):
+        content = {"message": "Hello, World!"}
+        return Response(content)
+
+
+class ResourceListView(generics.ListCreateAPIView):
+
+    serializer_class = ResourceSerializer
+    queryset = Resource.objects.all()
+
+
+class ModelAListView(generics.ListAPIView):
+
+    serializer_class = ModelASerializer
+    queryset = ModelA.objects.all()

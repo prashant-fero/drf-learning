@@ -15,6 +15,9 @@ Including another URLconf
 """
 
 from django.urls import path
+
+from app.models import ModelA
+
 from .views import (
     student_view,
     student_detail_view,
@@ -23,6 +26,13 @@ from .views import (
     UserListView,
     UserUpdateView,
     UserListApiView,
+    AlbumListView,
+    MoviesListView,
+    TrackListView,
+    ExampleView,
+    HelloView,
+    ResourceListView,
+    ModelAListView,
 )
 
 urlpatterns = [
@@ -34,4 +44,11 @@ urlpatterns = [
     path("user/", UserListView.as_view(), name="user_list_view"),
     path("users", UserListApiView.as_view(), name="user_list_view"),
     path("user/<int:pk>", UserUpdateView.as_view(), name="user_update_view"),
+    path("album/", AlbumListView.as_view(), name="album"),
+    path("movies/", MoviesListView.as_view(), name="movies"),
+    path("tracks/", TrackListView.as_view(), name="tracks"),
+    path("example/", ExampleView.as_view(), name="example"),
+    path("hello/", HelloView.as_view(), name="hello"),
+    path("resource/", ResourceListView.as_view(), name="resource"),
+    path("modela/", ModelAListView.as_view(), name="model_a"),
 ]

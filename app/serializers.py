@@ -5,7 +5,7 @@ from rest_framework import serializers
 from django.contrib.auth.models import User
 from rest_framework.validators import UniqueValidator
 
-from .models import Student, Course, Movie
+from .models import Student, Course, Movie, Album, Track, Resource, ModelA
 
 
 class StudentSerializer(serializers.ModelSerializer):
@@ -93,6 +93,7 @@ class UserSerializer(serializers.Serializer):
     def save(self):
         """save method"""
         print("validate data ", self.validated_data)
+        print("context data ", self.context)
         return super().save()
 
     class Meta:
@@ -104,7 +105,8 @@ class UserSerializer(serializers.Serializer):
 class MovieSerializer(serializers.ModelSerializer):  # create class to serializer model
     """movie serializer"""
 
-    creator = serializers.ReadOnlyField(source="creator.username")
+    # creator = serializers.ReadOnlyField(source="creator.username")
+    creator = serializers.StringRelatedField()
 
     class Meta:
         """model meta info"""
@@ -119,10 +121,55 @@ class UserModelSerializer(
     """user model serializer"""
 
     # movies = serializers.PrimaryKeyRelatedField(many=True, queryset=Movie.objects.all())
-    movies = MovieSerializer(many=True)
+    # movies = MovieSerializer(many=True)
+    movies = serializers.StringRelatedField(many=True)
+    # movies = serializers.SlugRelatedField(slug_field='title', queryset = Movie.objects.all())
 
     class Meta:
         """model meta info"""
 
         model = User
         fields = ("id", "username", "movies")
+
+
+class AlbumSerializer(serializers.ModelSerializer):
+    tracks = serializers.StringRelatedField(many=True)
+
+    class Meta:
+        model = Album
+        fields = ["album_name", "artist", "tracks"]
+
+
+class TrackSerializer(serializers.ModelSerializer):
+    # album = serializers.StringRelatedField()
+    # album = serializers.PrimaryKeyRelatedField(read_only=True)
+    album = serializers.SlugRelatedField(
+        slug_field="album_name", queryset=Album.objects.all()
+    )
+
+    class Meta:
+        model = Track
+        fields = ["album", "order", "duration", "title"]
+
+
+class ResourceSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Resource
+        fields = "__all__"
+
+    def to_representation(self, instance):
+        representation = super().to_representation(instance)
+        representation["likes"] = instance.liked_by.count()
+
+        return representation
+
+    def to_internal_value(self, data):
+        print(data)
+        return super().to_internal_value(data)
+
+
+class ModelASerializer(serializers.ModelSerializer):
+    class Meta:
+        model = ModelA
+        fields = "__all__"
+        depth = 2
