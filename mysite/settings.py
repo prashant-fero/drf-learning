@@ -12,6 +12,9 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 
 from pathlib import Path
 import os
+# This will make sure the app is always imported when
+# Django starts so that shared_task will use this app.
+from .celery import app as celery_app
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -41,6 +44,9 @@ INSTALLED_APPS = [
     "app",
     "rest_framework",
     "rest_framework.authtoken",
+    "django_filters",
+    'auditlog',
+    #'django_celery_results',
 ]
 
 MIDDLEWARE = [
@@ -51,6 +57,7 @@ MIDDLEWARE = [
     "django.contrib.auth.middleware.AuthenticationMiddleware",
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
+    'auditlog.middleware.AuditlogMiddleware'
 ]
 
 ROOT_URLCONF = "mysite.urls"
@@ -134,3 +141,9 @@ REST_FRAMEWORK = {
         "rest_framework.authentication.TokenAuthentication",  # <-- And here
     ],
 }
+
+BROKER_URL = 'redis://localhost:6379'
+CELERY_RESULT_BACKEND = 'redis://localhost:6379'
+# CELERY_ACCEPT_CONTENT = ['application/json']
+# CELERY_TASK_SERIALIZER = 'json'
+# CELERY_RESULT_SERIALIZER = 'json'

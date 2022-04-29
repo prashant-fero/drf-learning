@@ -1,0 +1,576 @@
+You are using `-A` as an option of the worker sub-command:
+celery worker -A celeryapp <...>
+
+The support for this usage was removed in Celery 5.0. Instead you should use `-A` as a global option:
+celery -A celeryapp worker <...>
+Usage: celery worker [OPTIONS]
+Try 'celery worker --help' for help.
+
+Error: no such option: -A
+You are using `-A` as an option of the worker sub-command:
+celery worker -A celeryapp <...>
+
+The support for this usage was removed in Celery 5.0. Instead you should use `-A` as a global option:
+celery -A celeryapp worker <...>
+Usage: celery worker [OPTIONS]
+Try 'celery worker --help' for help.
+
+Error: no such option: -A
+You are using `-A` as an option of the worker sub-command:
+celery worker -A celeryapp <...>
+
+The support for this usage was removed in Celery 5.0. Instead you should use `-A` as a global option:
+celery -A celeryapp worker <...>
+Usage: celery worker [OPTIONS]
+Try 'celery worker --help' for help.
+
+Error: no such option: -A
+You are using `-A` as an option of the worker sub-command:
+celery worker -A celeryapp <...>
+
+The support for this usage was removed in Celery 5.0. Instead you should use `-A` as a global option:
+celery -A celeryapp worker <...>
+Usage: celery worker [OPTIONS]
+Try 'celery worker --help' for help.
+
+Error: no such option: -A
+[2022-04-29 12:29:19,363: DEBUG/MainProcess] | Worker: Preparing bootsteps.
+[2022-04-29 12:29:19,365: DEBUG/MainProcess] | Worker: Building graph...
+[2022-04-29 12:29:19,365: DEBUG/MainProcess] | Worker: New boot order: {StateDB, Beat, Timer, Hub, Pool, Autoscaler, Consumer}
+[2022-04-29 12:29:19,373: DEBUG/MainProcess] | Consumer: Preparing bootsteps.
+[2022-04-29 12:29:19,373: DEBUG/MainProcess] | Consumer: Building graph...
+[2022-04-29 12:29:19,383: DEBUG/MainProcess] | Consumer: New boot order: {Connection, Events, Mingle, Gossip, Tasks, Control, Heart, Agent, event loop}
+[2022-04-29 12:29:19,384: WARNING/MainProcess] No hostname was supplied. Reverting to default 'localhost'
+[2022-04-29 12:29:19,388: CRITICAL/MainProcess] Unrecoverable error: ImproperlyConfigured('You need to install the redis library in order to use the Redis result store backend.',)
+Traceback (most recent call last):
+  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/app/base.py", line 1229, in backend
+    return self._local.backend
+AttributeError: '_thread._local' object has no attribute 'backend'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/worker/worker.py", line 203, in start
+    self.blueprint.start(self)
+  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/bootsteps.py", line 112, in start
+    self.on_start()
+  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/apps/worker.py", line 136, in on_start
+    self.emit_banner()
+  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/apps/worker.py", line 170, in emit_banner
+    ' \n', self.startup_info(artlines=not use_image))),
+  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/apps/worker.py", line 232, in startup_info
+    results=self.app.backend.as_uri(),
+  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/app/base.py", line 1231, in backend
+    self._local.backend = new_backend = self._get_backend()
+  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/app/base.py", line 937, in _get_backend
+    return backend(app=self, url=url)
+  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/backends/redis.py", line 207, in __init__
+    raise ImproperlyConfigured(E_REDIS_MISSING.strip())
+celery.exceptions.ImproperlyConfigured: You need to install the redis library in order to use the Redis result store backend.
+[2022-04-29 12:29:21,680: DEBUG/MainProcess] | Worker: Preparing bootsteps.
+[2022-04-29 12:29:21,682: DEBUG/MainProcess] | Worker: Building graph...
+[2022-04-29 12:29:21,683: DEBUG/MainProcess] | Worker: New boot order: {Beat, StateDB, Timer, Hub, Pool, Autoscaler, Consumer}
+[2022-04-29 12:29:21,689: DEBUG/MainProcess] | Consumer: Preparing bootsteps.
+[2022-04-29 12:29:21,689: DEBUG/MainProcess] | Consumer: Building graph...
+[2022-04-29 12:29:21,699: DEBUG/MainProcess] | Consumer: New boot order: {Connection, Events, Mingle, Gossip, Agent, Tasks, Control, Heart, event loop}
+[2022-04-29 12:29:21,700: WARNING/MainProcess] No hostname was supplied. Reverting to default 'localhost'
+[2022-04-29 12:29:21,704: CRITICAL/MainProcess] Unrecoverable error: ImproperlyConfigured('You need to install the redis library in order to use the Redis result store backend.',)
+Traceback (most recent call last):
+  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/app/base.py", line 1229, in backend
+    return self._local.backend
+AttributeError: '_thread._local' object has no attribute 'backend'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/worker/worker.py", line 203, in start
+    self.blueprint.start(self)
+  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/bootsteps.py", line 112, in start
+    self.on_start()
+  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/apps/worker.py", line 136, in on_start
+    self.emit_banner()
+  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/apps/worker.py", line 170, in emit_banner
+    ' \n', self.startup_info(artlines=not use_image))),
+  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/apps/worker.py", line 232, in startup_info
+    results=self.app.backend.as_uri(),
+  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/app/base.py", line 1231, in backend
+    self._local.backend = new_backend = self._get_backend()
+  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/app/base.py", line 937, in _get_backend
+    return backend(app=self, url=url)
+  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/backends/redis.py", line 207, in __init__
+    raise ImproperlyConfigured(E_REDIS_MISSING.strip())
+celery.exceptions.ImproperlyConfigured: You need to install the redis library in order to use the Redis result store backend.
+[2022-04-29 12:29:25,303: DEBUG/MainProcess] | Worker: Preparing bootsteps.
+[2022-04-29 12:29:25,305: DEBUG/MainProcess] | Worker: Building graph...
+[2022-04-29 12:29:25,306: DEBUG/MainProcess] | Worker: New boot order: {StateDB, Timer, Hub, Pool, Autoscaler, Beat, Consumer}
+[2022-04-29 12:29:25,312: DEBUG/MainProcess] | Consumer: Preparing bootsteps.
+[2022-04-29 12:29:25,313: DEBUG/MainProcess] | Consumer: Building graph...
+[2022-04-29 12:29:25,323: DEBUG/MainProcess] | Consumer: New boot order: {Connection, Events, Mingle, Tasks, Control, Agent, Gossip, Heart, event loop}
+[2022-04-29 12:29:25,324: WARNING/MainProcess] No hostname was supplied. Reverting to default 'localhost'
+[2022-04-29 12:29:25,328: CRITICAL/MainProcess] Unrecoverable error: ImproperlyConfigured('You need to install the redis library in order to use the Redis result store backend.',)
+Traceback (most recent call last):
+  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/app/base.py", line 1229, in backend
+    return self._local.backend
+AttributeError: '_thread._local' object has no attribute 'backend'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/worker/worker.py", line 203, in start
+    self.blueprint.start(self)
+  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/bootsteps.py", line 112, in start
+    self.on_start()
+  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/apps/worker.py", line 136, in on_start
+    self.emit_banner()
+  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/apps/worker.py", line 170, in emit_banner
+    ' \n', self.startup_info(artlines=not use_image))),
+  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/apps/worker.py", line 232, in startup_info
+    results=self.app.backend.as_uri(),
+  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/app/base.py", line 1231, in backend
+    self._local.backend = new_backend = self._get_backend()
+  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/app/base.py", line 937, in _get_backend
+    return backend(app=self, url=url)
+  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/backends/redis.py", line 207, in __init__
+    raise ImproperlyConfigured(E_REDIS_MISSING.strip())
+celery.exceptions.ImproperlyConfigured: You need to install the redis library in order to use the Redis result store backend.
+[2022-04-29 12:29:29,573: DEBUG/MainProcess] | Worker: Preparing bootsteps.
+[2022-04-29 12:29:29,575: DEBUG/MainProcess] | Worker: Building graph...
+[2022-04-29 12:29:29,576: DEBUG/MainProcess] | Worker: New boot order: {StateDB, Timer, Hub, Pool, Autoscaler, Beat, Consumer}
+[2022-04-29 12:29:29,582: DEBUG/MainProcess] | Consumer: Preparing bootsteps.
+[2022-04-29 12:29:29,583: DEBUG/MainProcess] | Consumer: Building graph...
+[2022-04-29 12:29:29,592: DEBUG/MainProcess] | Consumer: New boot order: {Connection, Events, Heart, Mingle, Tasks, Control, Gossip, Agent, event loop}
+[2022-04-29 12:29:29,593: WARNING/MainProcess] No hostname was supplied. Reverting to default 'localhost'
+[2022-04-29 12:29:29,597: CRITICAL/MainProcess] Unrecoverable error: ImproperlyConfigured('You need to install the redis library in order to use the Redis result store backend.',)
+Traceback (most recent call last):
+  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/app/base.py", line 1229, in backend
+    return self._local.backend
+AttributeError: '_thread._local' object has no attribute 'backend'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/worker/worker.py", line 203, in start
+    self.blueprint.start(self)
+  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/bootsteps.py", line 112, in start
+    self.on_start()
+  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/apps/worker.py", line 136, in on_start
+    self.emit_banner()
+  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/apps/worker.py", line 170, in emit_banner
+    ' \n', self.startup_info(artlines=not use_image))),
+  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/apps/worker.py", line 232, in startup_info
+    results=self.app.backend.as_uri(),
+  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/app/base.py", line 1231, in backend
+    self._local.backend = new_backend = self._get_backend()
+  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/app/base.py", line 937, in _get_backend
+    return backend(app=self, url=url)
+  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/backends/redis.py", line 207, in __init__
+    raise ImproperlyConfigured(E_REDIS_MISSING.strip())
+celery.exceptions.ImproperlyConfigured: You need to install the redis library in order to use the Redis result store backend.
+You are using `-A` as an option of the worker sub-command:
+celery worker -A celeryapp <...>
+
+The support for this usage was removed in Celery 5.0. Instead you should use `-A` as a global option:
+celery -A celeryapp worker <...>
+Usage: celery worker [OPTIONS]
+Try 'celery worker --help' for help.
+
+Error: no such option: -A
+You are using `-A` as an option of the worker sub-command:
+celery worker -A celeryapp <...>
+
+The support for this usage was removed in Celery 5.0. Instead you should use `-A` as a global option:
+celery -A celeryapp worker <...>
+Usage: celery worker [OPTIONS]
+Try 'celery worker --help' for help.
+
+Error: no such option: -A
+You are using `-A` as an option of the worker sub-command:
+celery worker -A celeryapp <...>
+
+The support for this usage was removed in Celery 5.0. Instead you should use `-A` as a global option:
+celery -A celeryapp worker <...>
+Usage: celery worker [OPTIONS]
+Try 'celery worker --help' for help.
+
+Error: no such option: -A
+You are using `-A` as an option of the worker sub-command:
+celery worker -A celeryapp <...>
+
+The support for this usage was removed in Celery 5.0. Instead you should use `-A` as a global option:
+celery -A celeryapp worker <...>
+Usage: celery worker [OPTIONS]
+Try 'celery worker --help' for help.
+
+Error: no such option: -A
+[2022-04-29 12:35:17,128: WARNING/MainProcess] No hostname was supplied. Reverting to default 'localhost'
+[2022-04-29 12:35:17,132: CRITICAL/MainProcess] Unrecoverable error: ImproperlyConfigured('You need to install the redis library in order to use the Redis result store backend.',)
+Traceback (most recent call last):
+  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/app/base.py", line 1229, in backend
+    return self._local.backend
+AttributeError: '_thread._local' object has no attribute 'backend'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/worker/worker.py", line 203, in start
+    self.blueprint.start(self)
+  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/bootsteps.py", line 112, in start
+    self.on_start()
+  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/apps/worker.py", line 136, in on_start
+    self.emit_banner()
+  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/apps/worker.py", line 170, in emit_banner
+    ' \n', self.startup_info(artlines=not use_image))),
+  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/apps/worker.py", line 232, in startup_info
+    results=self.app.backend.as_uri(),
+  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/app/base.py", line 1231, in backend
+    self._local.backend = new_backend = self._get_backend()
+  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/app/base.py", line 937, in _get_backend
+    return backend(app=self, url=url)
+  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/backends/redis.py", line 207, in __init__
+    raise ImproperlyConfigured(E_REDIS_MISSING.strip())
+celery.exceptions.ImproperlyConfigured: You need to install the redis library in order to use the Redis result store backend.
+[2022-04-29 12:35:19,326: WARNING/MainProcess] No hostname was supplied. Reverting to default 'localhost'
+[2022-04-29 12:35:19,330: CRITICAL/MainProcess] Unrecoverable error: ImproperlyConfigured('You need to install the redis library in order to use the Redis result store backend.',)
+Traceback (most recent call last):
+  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/app/base.py", line 1229, in backend
+    return self._local.backend
+AttributeError: '_thread._local' object has no attribute 'backend'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/worker/worker.py", line 203, in start
+    self.blueprint.start(self)
+  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/bootsteps.py", line 112, in start
+    self.on_start()
+  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/apps/worker.py", line 136, in on_start
+    self.emit_banner()
+  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/apps/worker.py", line 170, in emit_banner
+    ' \n', self.startup_info(artlines=not use_image))),
+  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/apps/worker.py", line 232, in startup_info
+    results=self.app.backend.as_uri(),
+  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/app/base.py", line 1231, in backend
+    self._local.backend = new_backend = self._get_backend()
+  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/app/base.py", line 937, in _get_backend
+    return backend(app=self, url=url)
+  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/backends/redis.py", line 207, in __init__
+    raise ImproperlyConfigured(E_REDIS_MISSING.strip())
+celery.exceptions.ImproperlyConfigured: You need to install the redis library in order to use the Redis result store backend.
+[2022-04-29 12:35:22,499: WARNING/MainProcess] No hostname was supplied. Reverting to default 'localhost'
+[2022-04-29 12:35:22,503: CRITICAL/MainProcess] Unrecoverable error: ImproperlyConfigured('You need to install the redis library in order to use the Redis result store backend.',)
+Traceback (most recent call last):
+  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/app/base.py", line 1229, in backend
+    return self._local.backend
+AttributeError: '_thread._local' object has no attribute 'backend'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/worker/worker.py", line 203, in start
+    self.blueprint.start(self)
+  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/bootsteps.py", line 112, in start
+    self.on_start()
+  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/apps/worker.py", line 136, in on_start
+    self.emit_banner()
+  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/apps/worker.py", line 170, in emit_banner
+    ' \n', self.startup_info(artlines=not use_image))),
+  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/apps/worker.py", line 232, in startup_info
+    results=self.app.backend.as_uri(),
+  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/app/base.py", line 1231, in backend
+    self._local.backend = new_backend = self._get_backend()
+  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/app/base.py", line 937, in _get_backend
+    return backend(app=self, url=url)
+  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/backends/redis.py", line 207, in __init__
+    raise ImproperlyConfigured(E_REDIS_MISSING.strip())
+celery.exceptions.ImproperlyConfigured: You need to install the redis library in order to use the Redis result store backend.
+[2022-04-29 12:35:27,033: WARNING/MainProcess] No hostname was supplied. Reverting to default 'localhost'
+[2022-04-29 12:35:27,038: CRITICAL/MainProcess] Unrecoverable error: ImproperlyConfigured('You need to install the redis library in order to use the Redis result store backend.',)
+Traceback (most recent call last):
+  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/app/base.py", line 1229, in backend
+    return self._local.backend
+AttributeError: '_thread._local' object has no attribute 'backend'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/worker/worker.py", line 203, in start
+    self.blueprint.start(self)
+  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/bootsteps.py", line 112, in start
+    self.on_start()
+  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/apps/worker.py", line 136, in on_start
+    self.emit_banner()
+  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/apps/worker.py", line 170, in emit_banner
+    ' \n', self.startup_info(artlines=not use_image))),
+  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/apps/worker.py", line 232, in startup_info
+    results=self.app.backend.as_uri(),
+  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/app/base.py", line 1231, in backend
+    self._local.backend = new_backend = self._get_backend()
+  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/app/base.py", line 937, in _get_backend
+    return backend(app=self, url=url)
+  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/backends/redis.py", line 207, in __init__
+    raise ImproperlyConfigured(E_REDIS_MISSING.strip())
+celery.exceptions.ImproperlyConfigured: You need to install the redis library in order to use the Redis result store backend.
+[2022-04-29 12:37:31,700: WARNING/MainProcess] No hostname was supplied. Reverting to default 'localhost'
+[2022-04-29 12:37:31,707: CRITICAL/MainProcess] Unrecoverable error: ImproperlyConfigured('You need to install the redis library in order to use the Redis result store backend.',)
+Traceback (most recent call last):
+  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/app/base.py", line 1229, in backend
+    return self._local.backend
+AttributeError: '_thread._local' object has no attribute 'backend'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/worker/worker.py", line 203, in start
+    self.blueprint.start(self)
+  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/bootsteps.py", line 112, in start
+    self.on_start()
+  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/apps/worker.py", line 136, in on_start
+    self.emit_banner()
+  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/apps/worker.py", line 170, in emit_banner
+    ' \n', self.startup_info(artlines=not use_image))),
+  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/apps/worker.py", line 232, in startup_info
+    results=self.app.backend.as_uri(),
+  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/app/base.py", line 1231, in backend
+    self._local.backend = new_backend = self._get_backend()
+  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/app/base.py", line 937, in _get_backend
+    return backend(app=self, url=url)
+  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/backends/redis.py", line 207, in __init__
+    raise ImproperlyConfigured(E_REDIS_MISSING.strip())
+celery.exceptions.ImproperlyConfigured: You need to install the redis library in order to use the Redis result store backend.
+[2022-04-29 12:37:34,104: WARNING/MainProcess] No hostname was supplied. Reverting to default 'localhost'
+[2022-04-29 12:37:34,109: CRITICAL/MainProcess] Unrecoverable error: ImproperlyConfigured('You need to install the redis library in order to use the Redis result store backend.',)
+Traceback (most recent call last):
+  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/app/base.py", line 1229, in backend
+    return self._local.backend
+AttributeError: '_thread._local' object has no attribute 'backend'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/worker/worker.py", line 203, in start
+    self.blueprint.start(self)
+  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/bootsteps.py", line 112, in start
+    self.on_start()
+  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/apps/worker.py", line 136, in on_start
+    self.emit_banner()
+  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/apps/worker.py", line 170, in emit_banner
+    ' \n', self.startup_info(artlines=not use_image))),
+  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/apps/worker.py", line 232, in startup_info
+    results=self.app.backend.as_uri(),
+  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/app/base.py", line 1231, in backend
+    self._local.backend = new_backend = self._get_backend()
+  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/app/base.py", line 937, in _get_backend
+    return backend(app=self, url=url)
+  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/backends/redis.py", line 207, in __init__
+    raise ImproperlyConfigured(E_REDIS_MISSING.strip())
+celery.exceptions.ImproperlyConfigured: You need to install the redis library in order to use the Redis result store backend.
+[2022-04-29 12:37:37,301: WARNING/MainProcess] No hostname was supplied. Reverting to default 'localhost'
+[2022-04-29 12:37:37,306: CRITICAL/MainProcess] Unrecoverable error: ImproperlyConfigured('You need to install the redis library in order to use the Redis result store backend.',)
+Traceback (most recent call last):
+  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/app/base.py", line 1229, in backend
+    return self._local.backend
+AttributeError: '_thread._local' object has no attribute 'backend'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/worker/worker.py", line 203, in start
+    self.blueprint.start(self)
+  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/bootsteps.py", line 112, in start
+    self.on_start()
+  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/apps/worker.py", line 136, in on_start
+    self.emit_banner()
+  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/apps/worker.py", line 170, in emit_banner
+    ' \n', self.startup_info(artlines=not use_image))),
+  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/apps/worker.py", line 232, in startup_info
+    results=self.app.backend.as_uri(),
+  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/app/base.py", line 1231, in backend
+    self._local.backend = new_backend = self._get_backend()
+  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/app/base.py", line 937, in _get_backend
+    return backend(app=self, url=url)
+  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/backends/redis.py", line 207, in __init__
+    raise ImproperlyConfigured(E_REDIS_MISSING.strip())
+celery.exceptions.ImproperlyConfigured: You need to install the redis library in order to use the Redis result store backend.
+[2022-04-29 12:37:42,029: WARNING/MainProcess] No hostname was supplied. Reverting to default 'localhost'
+[2022-04-29 12:37:42,035: CRITICAL/MainProcess] Unrecoverable error: ImproperlyConfigured('You need to install the redis library in order to use the Redis result store backend.',)
+Traceback (most recent call last):
+  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/app/base.py", line 1229, in backend
+    return self._local.backend
+AttributeError: '_thread._local' object has no attribute 'backend'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/worker/worker.py", line 203, in start
+    self.blueprint.start(self)
+  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/bootsteps.py", line 112, in start
+    self.on_start()
+  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/apps/worker.py", line 136, in on_start
+    self.emit_banner()
+  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/apps/worker.py", line 170, in emit_banner
+    ' \n', self.startup_info(artlines=not use_image))),
+  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/apps/worker.py", line 232, in startup_info
+    results=self.app.backend.as_uri(),
+  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/app/base.py", line 1231, in backend
+    self._local.backend = new_backend = self._get_backend()
+  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/app/base.py", line 937, in _get_backend
+    return backend(app=self, url=url)
+  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/backends/redis.py", line 207, in __init__
+    raise ImproperlyConfigured(E_REDIS_MISSING.strip())
+celery.exceptions.ImproperlyConfigured: You need to install the redis library in order to use the Redis result store backend.
+[2022-04-29 12:44:00,916: WARNING/MainProcess] No hostname was supplied. Reverting to default 'localhost'
+ 
+ -------------- celery@ubuntu-Lenovo-G50-80 v5.1.2 (sun-harmonics)
+--- ***** ----- 
+-- ******* ---- Linux-5.4.0-42-generic-x86_64-with-Ubuntu-18.04-bionic 2022-04-29 12:44:00
+- *** --- * --- 
+- ** ---------- [config]
+- ** ---------- .> app:         mysite:0x7fe8df339160
+- ** ---------- .> transport:   amqp://guest:**@localhost:5672//
+- ** ---------- .> results:     redis://localhost:6379/
+- *** --- * --- .> concurrency: 1 (prefork)
+-- ******* ---- .> task events: OFF (enable -E to monitor tasks in this worker)
+--- ***** ----- 
+ -------------- [queues]
+                .> celery           exchange=celery(direct) key=celery
+                
+
+[tasks]
+  . app.tasks.add
+  . mysite.celery.debug_task
+
+[2022-04-29 12:44:01,022: INFO/MainProcess] Connected to amqp://guest:**@127.0.0.1:5672//
+[2022-04-29 12:44:01,028: INFO/MainProcess] mingle: searching for neighbors
+[2022-04-29 12:44:01,035: WARNING/MainProcess] No hostname was supplied. Reverting to default 'localhost'
+[2022-04-29 12:44:02,048: INFO/MainProcess] mingle: all alone
+[2022-04-29 12:44:02,061: WARNING/MainProcess] /home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/kombu/pidbox.py:72: UserWarning: A node named celery@ubuntu-Lenovo-G50-80 is already using this process mailbox!
+
+Maybe you forgot to shutdown the other node or did not do so properly?
+Or if you meant to start multiple nodes on the same host please make sure
+you give each node a unique node name!
+
+  warnings.warn(W_PIDBOX_IN_USE.format(node=self))
+
+[2022-04-29 12:44:02,074: WARNING/MainProcess] /home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/fixups/django.py:204: UserWarning: Using settings.DEBUG leads to a memory
+            leak, never use this setting in production environments!
+  leak, never use this setting in production environments!''')
+
+[2022-04-29 12:44:02,074: INFO/MainProcess] celery@ubuntu-Lenovo-G50-80 ready.
+[2022-04-29 12:45:13,388: INFO/MainProcess] Task app.tasks.add[0d0572d8-dfbb-4734-b908-b3c4cbd2903e] received
+[2022-04-29 12:45:13,392: INFO/ForkPoolWorker-1] app.tasks.add[0d0572d8-dfbb-4734-b908-b3c4cbd2903e]: print record 0
+[2022-04-29 12:45:14,393: INFO/ForkPoolWorker-1] app.tasks.add[0d0572d8-dfbb-4734-b908-b3c4cbd2903e]: print record 1
+[2022-04-29 12:45:15,395: INFO/ForkPoolWorker-1] app.tasks.add[0d0572d8-dfbb-4734-b908-b3c4cbd2903e]: print record 2
+[2022-04-29 12:45:16,396: INFO/ForkPoolWorker-1] app.tasks.add[0d0572d8-dfbb-4734-b908-b3c4cbd2903e]: print record 3
+[2022-04-29 12:45:17,398: INFO/ForkPoolWorker-1] app.tasks.add[0d0572d8-dfbb-4734-b908-b3c4cbd2903e]: print record 4
+[2022-04-29 12:45:18,399: INFO/ForkPoolWorker-1] app.tasks.add[0d0572d8-dfbb-4734-b908-b3c4cbd2903e]: print record 5
+[2022-04-29 12:45:19,400: INFO/ForkPoolWorker-1] app.tasks.add[0d0572d8-dfbb-4734-b908-b3c4cbd2903e]: print record 6
+[2022-04-29 12:45:20,402: INFO/ForkPoolWorker-1] app.tasks.add[0d0572d8-dfbb-4734-b908-b3c4cbd2903e]: print record 7
+[2022-04-29 12:45:21,403: INFO/ForkPoolWorker-1] app.tasks.add[0d0572d8-dfbb-4734-b908-b3c4cbd2903e]: print record 8
+[2022-04-29 12:45:22,404: INFO/ForkPoolWorker-1] app.tasks.add[0d0572d8-dfbb-4734-b908-b3c4cbd2903e]: print record 9
+[2022-04-29 12:45:23,416: INFO/ForkPoolWorker-1] Task app.tasks.add[0d0572d8-dfbb-4734-b908-b3c4cbd2903e] succeeded in 10.025085613997362s: 5
+
+worker: Warm shutdown (MainProcess)
+[2022-04-29 13:11:01,533: WARNING/MainProcess] No hostname was supplied. Reverting to default 'localhost'
+ 
+ -------------- celery@ubuntu-Lenovo-G50-80 v5.1.2 (sun-harmonics)
+--- ***** ----- 
+-- ******* ---- Linux-5.4.0-42-generic-x86_64-with-Ubuntu-18.04-bionic 2022-04-29 13:11:01
+- *** --- * --- 
+- ** ---------- [config]
+- ** ---------- .> app:         mysite:0x7fe9bba403c8
+- ** ---------- .> transport:   amqp://guest:**@localhost:5672//
+- ** ---------- .> results:     redis://localhost:6379/
+- *** --- * --- .> concurrency: 1 (prefork)
+-- ******* ---- .> task events: OFF (enable -E to monitor tasks in this worker)
+--- ***** ----- 
+ -------------- [queues]
+                .> celery           exchange=celery(direct) key=celery
+                
+
+[tasks]
+  . app.tasks.add
+  . mysite.celery.debug_task
+
+[2022-04-29 13:11:01,612: INFO/MainProcess] Connected to amqp://guest:**@127.0.0.1:5672//
+[2022-04-29 13:11:01,622: INFO/MainProcess] mingle: searching for neighbors
+[2022-04-29 13:11:01,631: WARNING/MainProcess] No hostname was supplied. Reverting to default 'localhost'
+[2022-04-29 13:11:02,650: INFO/MainProcess] mingle: all alone
+[2022-04-29 13:11:02,666: WARNING/MainProcess] /home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/kombu/pidbox.py:72: UserWarning: A node named celery@ubuntu-Lenovo-G50-80 is already using this process mailbox!
+
+Maybe you forgot to shutdown the other node or did not do so properly?
+Or if you meant to start multiple nodes on the same host please make sure
+you give each node a unique node name!
+
+  warnings.warn(W_PIDBOX_IN_USE.format(node=self))
+
+[2022-04-29 13:11:02,680: WARNING/MainProcess] /home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/fixups/django.py:204: UserWarning: Using settings.DEBUG leads to a memory
+            leak, never use this setting in production environments!
+  leak, never use this setting in production environments!''')
+
+[2022-04-29 13:11:02,680: INFO/MainProcess] celery@ubuntu-Lenovo-G50-80 ready.
+
+worker: Warm shutdown (MainProcess)
+[2022-04-29 13:12:19,823: WARNING/MainProcess] No hostname was supplied. Reverting to default 'localhost'
+ 
+ -------------- celery@ubuntu-Lenovo-G50-80 v5.1.2 (sun-harmonics)
+--- ***** ----- 
+-- ******* ---- Linux-5.4.0-42-generic-x86_64-with-Ubuntu-18.04-bionic 2022-04-29 13:12:19
+- *** --- * --- 
+- ** ---------- [config]
+- ** ---------- .> app:         mysite:0x7f7805792cc0
+- ** ---------- .> transport:   amqp://guest:**@localhost:5672//
+- ** ---------- .> results:     redis://localhost:6379/
+- *** --- * --- .> concurrency: 1 (prefork)
+-- ******* ---- .> task events: OFF (enable -E to monitor tasks in this worker)
+--- ***** ----- 
+ -------------- [queues]
+                .> celery           exchange=celery(direct) key=celery
+                
+
+[tasks]
+  . app.tasks.add
+  . mysite.celery.debug_task
+
+[2022-04-29 13:12:19,878: INFO/MainProcess] Connected to amqp://guest:**@127.0.0.1:5672//
+[2022-04-29 13:12:19,889: INFO/MainProcess] mingle: searching for neighbors
+[2022-04-29 13:12:19,899: WARNING/MainProcess] No hostname was supplied. Reverting to default 'localhost'
+[2022-04-29 13:12:20,915: INFO/MainProcess] mingle: all alone
+[2022-04-29 13:12:20,940: WARNING/MainProcess] /home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/kombu/pidbox.py:72: UserWarning: A node named celery@ubuntu-Lenovo-G50-80 is already using this process mailbox!
+
+Maybe you forgot to shutdown the other node or did not do so properly?
+Or if you meant to start multiple nodes on the same host please make sure
+you give each node a unique node name!
+
+  warnings.warn(W_PIDBOX_IN_USE.format(node=self))
+
+[2022-04-29 13:12:20,944: WARNING/MainProcess] /home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/fixups/django.py:204: UserWarning: Using settings.DEBUG leads to a memory
+            leak, never use this setting in production environments!
+  leak, never use this setting in production environments!''')
+
+[2022-04-29 13:12:20,944: INFO/MainProcess] celery@ubuntu-Lenovo-G50-80 ready.
+[2022-04-29 13:12:41,549: INFO/MainProcess] Task app.tasks.add[034166f8-3011-43ab-a48b-4f6567039951] received
+[2022-04-29 13:12:41,552: INFO/ForkPoolWorker-1] app.tasks.add[034166f8-3011-43ab-a48b-4f6567039951]: print record 0
+[2022-04-29 13:12:42,554: INFO/ForkPoolWorker-1] app.tasks.add[034166f8-3011-43ab-a48b-4f6567039951]: print record 1
+[2022-04-29 13:12:43,555: INFO/ForkPoolWorker-1] app.tasks.add[034166f8-3011-43ab-a48b-4f6567039951]: print record 2
+[2022-04-29 13:12:44,557: INFO/ForkPoolWorker-1] app.tasks.add[034166f8-3011-43ab-a48b-4f6567039951]: print record 3
+[2022-04-29 13:12:45,558: INFO/ForkPoolWorker-1] app.tasks.add[034166f8-3011-43ab-a48b-4f6567039951]: print record 4
+[2022-04-29 13:12:46,559: INFO/ForkPoolWorker-1] app.tasks.add[034166f8-3011-43ab-a48b-4f6567039951]: print record 5
+[2022-04-29 13:12:47,561: INFO/ForkPoolWorker-1] app.tasks.add[034166f8-3011-43ab-a48b-4f6567039951]: print record 6
+[2022-04-29 13:12:48,562: INFO/ForkPoolWorker-1] app.tasks.add[034166f8-3011-43ab-a48b-4f6567039951]: print record 7
+[2022-04-29 13:12:49,563: INFO/ForkPoolWorker-1] app.tasks.add[034166f8-3011-43ab-a48b-4f6567039951]: print record 8
+[2022-04-29 13:12:50,565: INFO/ForkPoolWorker-1] app.tasks.add[034166f8-3011-43ab-a48b-4f6567039951]: print record 9
+[2022-04-29 13:12:51,571: INFO/ForkPoolWorker-1] Task app.tasks.add[034166f8-3011-43ab-a48b-4f6567039951] succeeded in 10.01971969400256s: 30
+[2022-04-29 13:13:11,549: INFO/MainProcess] Task app.tasks.add[3d4eba73-e46f-4b28-ac4c-044b4269a98a] received
+[2022-04-29 13:13:11,553: INFO/ForkPoolWorker-2] app.tasks.add[3d4eba73-e46f-4b28-ac4c-044b4269a98a]: print record 0
+[2022-04-29 13:13:12,554: INFO/ForkPoolWorker-2] app.tasks.add[3d4eba73-e46f-4b28-ac4c-044b4269a98a]: print record 1
+[2022-04-29 13:13:13,555: INFO/ForkPoolWorker-2] app.tasks.add[3d4eba73-e46f-4b28-ac4c-044b4269a98a]: print record 2
+[2022-04-29 13:13:14,555: INFO/ForkPoolWorker-2] app.tasks.add[3d4eba73-e46f-4b28-ac4c-044b4269a98a]: print record 3
+[2022-04-29 13:13:15,557: INFO/ForkPoolWorker-2] app.tasks.add[3d4eba73-e46f-4b28-ac4c-044b4269a98a]: print record 4
+[2022-04-29 13:13:16,558: INFO/ForkPoolWorker-2] app.tasks.add[3d4eba73-e46f-4b28-ac4c-044b4269a98a]: print record 5
+[2022-04-29 13:13:17,559: INFO/ForkPoolWorker-2] app.tasks.add[3d4eba73-e46f-4b28-ac4c-044b4269a98a]: print record 6
+[2022-04-29 13:13:18,561: INFO/ForkPoolWorker-2] app.tasks.add[3d4eba73-e46f-4b28-ac4c-044b4269a98a]: print record 7
+[2022-04-29 13:13:19,562: INFO/ForkPoolWorker-2] app.tasks.add[3d4eba73-e46f-4b28-ac4c-044b4269a98a]: print record 8
+[2022-04-29 13:13:20,563: INFO/ForkPoolWorker-2] app.tasks.add[3d4eba73-e46f-4b28-ac4c-044b4269a98a]: print record 9
+[2022-04-29 13:13:21,572: INFO/ForkPoolWorker-2] Task app.tasks.add[3d4eba73-e46f-4b28-ac4c-044b4269a98a] succeeded in 10.019741062998946s: 30
+
+worker: Warm shutdown (MainProcess)

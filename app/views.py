@@ -1,5 +1,5 @@
 """ view files """
-from multiprocessing import context
+from django.http import JsonResponse
 from rest_framework.response import Response
 from rest_framework.decorators import api_view
 from rest_framework import status
@@ -7,7 +7,14 @@ from rest_framework import generics
 from rest_framework.views import APIView
 from rest_framework.authentication import SessionAuthentication, BasicAuthentication
 from rest_framework.permissions import IsAuthenticated
+from rest_framework import filters
+from app.tasks import add
+from django_filters.rest_framework import DjangoFilterBackend
 from django.contrib.auth.models import User
+from rest_framework import pagination
+from rest_framework import viewsets
+from rest_framework.decorators import action
+
 
 # custom
 from .serializers import (
@@ -108,6 +115,11 @@ class UserListView(generics.ListCreateAPIView):
 
     queryset = User.objects.all()
     serializer_class = UserSerializer
+    pagination_class = pagination.PageNumberPagination
+    page_size = 2
+    # page_size_query_param = 'page_size'
+    # max_page_size = 50
+    # page_query_param = 'p'
 
 
 class UserUpdateView(generics.UpdateAPIView):
@@ -128,7 +140,9 @@ class ListCreateMovieAPIView(generics.ListCreateAPIView):
         serializer.save(creator=self.request.user)
 
 
-class UserListApiView(generics.ListAPIView):
+class UserListApiView(
+    generics.ListAPIView,
+):
     """user list api"""
 
     serializer_class = UserModelSerializer
@@ -177,9 +191,42 @@ class ResourceListView(generics.ListCreateAPIView):
 
     serializer_class = ResourceSerializer
     queryset = Resource.objects.all()
+    # filter_backends = [DjangoFilterBackend]
+    # filterset_fields = ["title"]
+    filter_backends = [filters.SearchFilter]
+    search_fields = ["title", "liked_by__username"]
 
 
 class ModelAListView(generics.ListAPIView):
 
     serializer_class = ModelASerializer
     queryset = ModelA.objects.all()
+
+
+class ModelAViewSet(viewsets.ModelViewSet):
+
+    serializer_class = ModelASerializer
+    queryset = ModelA.objects.all()
+
+    @action(
+        methods=["post"],
+        detail=True,
+        url_path="change-password",
+        url_name="change_password",
+    )
+    def custom_response(self, request, pk=None):
+        return Response({"id": pk})
+
+    @action(
+        methods=["get"],
+        detail=True,
+        url_path="change-password",
+        url_name="change_password",
+    )
+    def custom_response(self, request, pk=None):
+        return Response({"id": pk})
+
+
+def home(request):
+    add.delay(3, 2)
+    return JsonResponse({"request": "ok"})

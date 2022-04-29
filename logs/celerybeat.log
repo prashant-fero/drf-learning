@@ -1,0 +1,1344 @@
+You are using `-A` as an option of the beat sub-command:
+celery beat -A celeryapp <...>
+
+The support for this usage was removed in Celery 5.0. Instead you should use `-A` as a global option:
+celery -A celeryapp beat <...>
+Usage: celery beat [OPTIONS]
+Try 'celery beat --help' for help.
+
+Error: no such option: -A
+You are using `-A` as an option of the beat sub-command:
+celery beat -A celeryapp <...>
+
+The support for this usage was removed in Celery 5.0. Instead you should use `-A` as a global option:
+celery -A celeryapp beat <...>
+Usage: celery beat [OPTIONS]
+Try 'celery beat --help' for help.
+
+Error: no such option: -A
+You are using `-A` as an option of the beat sub-command:
+celery beat -A celeryapp <...>
+
+The support for this usage was removed in Celery 5.0. Instead you should use `-A` as a global option:
+celery -A celeryapp beat <...>
+Usage: celery beat [OPTIONS]
+Try 'celery beat --help' for help.
+
+Error: no such option: -A
+You are using `-A` as an option of the beat sub-command:
+celery beat -A celeryapp <...>
+
+The support for this usage was removed in Celery 5.0. Instead you should use `-A` as a global option:
+celery -A celeryapp beat <...>
+Usage: celery beat [OPTIONS]
+Try 'celery beat --help' for help.
+
+Error: no such option: -A
+You are using `-A` as an option of the beat sub-command:
+celery beat -A celeryapp <...>
+
+The support for this usage was removed in Celery 5.0. Instead you should use `-A` as a global option:
+celery -A celeryapp beat <...>
+Usage: celery beat [OPTIONS]
+Try 'celery beat --help' for help.
+
+Error: no such option: -A
+You are using `-A` as an option of the beat sub-command:
+celery beat -A celeryapp <...>
+
+The support for this usage was removed in Celery 5.0. Instead you should use `-A` as a global option:
+celery -A celeryapp beat <...>
+Usage: celery beat [OPTIONS]
+Try 'celery beat --help' for help.
+
+Error: no such option: -A
+You are using `-A` as an option of the beat sub-command:
+celery beat -A celeryapp <...>
+
+The support for this usage was removed in Celery 5.0. Instead you should use `-A` as a global option:
+celery -A celeryapp beat <...>
+Usage: celery beat [OPTIONS]
+Try 'celery beat --help' for help.
+
+Error: no such option: -A
+You are using `-A` as an option of the beat sub-command:
+celery beat -A celeryapp <...>
+
+The support for this usage was removed in Celery 5.0. Instead you should use `-A` as a global option:
+celery -A celeryapp beat <...>
+Usage: celery beat [OPTIONS]
+Try 'celery beat --help' for help.
+
+Error: no such option: -A
+You are using `-A` as an option of the beat sub-command:
+celery beat -A celeryapp <...>
+
+The support for this usage was removed in Celery 5.0. Instead you should use `-A` as a global option:
+celery -A celeryapp beat <...>
+Usage: celery beat [OPTIONS]
+Try 'celery beat --help' for help.
+
+Error: no such option: -A
+You are using `-A` as an option of the beat sub-command:
+celery beat -A celeryapp <...>
+
+The support for this usage was removed in Celery 5.0. Instead you should use `-A` as a global option:
+celery -A celeryapp beat <...>
+Usage: celery beat [OPTIONS]
+Try 'celery beat --help' for help.
+
+Error: no such option: -A
+You are using `-A` as an option of the beat sub-command:
+celery beat -A celeryapp <...>
+
+The support for this usage was removed in Celery 5.0. Instead you should use `-A` as a global option:
+celery -A celeryapp beat <...>
+Usage: celery beat [OPTIONS]
+Try 'celery beat --help' for help.
+
+Error: no such option: -A
+You are using `-A` as an option of the beat sub-command:
+celery beat -A celeryapp <...>
+
+The support for this usage was removed in Celery 5.0. Instead you should use `-A` as a global option:
+celery -A celeryapp beat <...>
+Usage: celery beat [OPTIONS]
+Try 'celery beat --help' for help.
+
+Error: no such option: -A
+You are using `-A` as an option of the beat sub-command:
+celery beat -A celeryapp <...>
+
+The support for this usage was removed in Celery 5.0. Instead you should use `-A` as a global option:
+celery -A celeryapp beat <...>
+Usage: celery beat [OPTIONS]
+Try 'celery beat --help' for help.
+
+Error: no such option: -A
+You are using `-A` as an option of the beat sub-command:
+celery beat -A celeryapp <...>
+
+The support for this usage was removed in Celery 5.0. Instead you should use `-A` as a global option:
+celery -A celeryapp beat <...>
+Usage: celery beat [OPTIONS]
+Try 'celery beat --help' for help.
+
+Error: no such option: -A
+You are using `-A` as an option of the beat sub-command:
+celery beat -A celeryapp <...>
+
+The support for this usage was removed in Celery 5.0. Instead you should use `-A` as a global option:
+celery -A celeryapp beat <...>
+Usage: celery beat [OPTIONS]
+Try 'celery beat --help' for help.
+
+Error: no such option: -A
+You are using `-A` as an option of the beat sub-command:
+celery beat -A celeryapp <...>
+
+The support for this usage was removed in Celery 5.0. Instead you should use `-A` as a global option:
+celery -A celeryapp beat <...>
+Usage: celery beat [OPTIONS]
+Try 'celery beat --help' for help.
+
+Error: no such option: -A
+[2022-04-29 12:37:31,664: INFO/MainProcess] beat: Starting...
+[2022-04-29 12:37:31,691: CRITICAL/MainProcess] beat raised exception <class 'celery.exceptions.ImproperlyConfigured'>: ImproperlyConfigured('You need to install the redis library in order to use the Redis result store backend.',)
+Traceback (most recent call last):
+  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/cached_property.py", line 70, in __get__
+    return obj_dict[name]
+KeyError: 'scheduler'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/app/base.py", line 1229, in backend
+    return self._local.backend
+AttributeError: '_thread._local' object has no attribute 'backend'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/apps/beat.py", line 105, in start_scheduler
+    service.start()
+  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/beat.py", line 636, in start
+    humanize_seconds(self.scheduler.max_interval))
+  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/kombu/utils/objects.py", line 29, in __get__
+    return super().__get__(instance, owner)
+  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/cached_property.py", line 74, in __get__
+    return obj_dict.setdefault(name, self.func(obj))
+  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/beat.py", line 680, in scheduler
+    return self.get_scheduler()
+  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/beat.py", line 675, in get_scheduler
+    lazy=lazy,
+  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/beat.py", line 515, in __init__
+    Scheduler.__init__(self, *args, **kwargs)
+  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/beat.py", line 271, in __init__
+    self.setup_schedule()
+  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/beat.py", line 559, in setup_schedule
+    self.install_default_entries(self.schedule)
+  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/beat.py", line 276, in install_default_entries
+    not self.app.backend.supports_autoexpire:
+  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/app/base.py", line 1231, in backend
+    self._local.backend = new_backend = self._get_backend()
+  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/app/base.py", line 937, in _get_backend
+    return backend(app=self, url=url)
+  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/backends/redis.py", line 207, in __init__
+    raise ImproperlyConfigured(E_REDIS_MISSING.strip())
+celery.exceptions.ImproperlyConfigured: You need to install the redis library in order to use the Redis result store backend.
+[2022-04-29 12:37:31,692: WARNING/MainProcess] Traceback (most recent call last):
+
+[2022-04-29 12:37:31,692: WARNING/MainProcess]   File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/cached_property.py", line 70, in __get__
+
+[2022-04-29 12:37:31,693: WARNING/MainProcess]     
+[2022-04-29 12:37:31,693: WARNING/MainProcess] return obj_dict[name]
+[2022-04-29 12:37:31,693: WARNING/MainProcess] 
+
+[2022-04-29 12:37:31,693: WARNING/MainProcess] KeyError
+[2022-04-29 12:37:31,693: WARNING/MainProcess] : 
+[2022-04-29 12:37:31,693: WARNING/MainProcess] 'scheduler'
+[2022-04-29 12:37:31,693: WARNING/MainProcess] 
+
+[2022-04-29 12:37:31,693: WARNING/MainProcess] 
+During handling of the above exception, another exception occurred:
+
+
+[2022-04-29 12:37:31,693: WARNING/MainProcess] Traceback (most recent call last):
+
+[2022-04-29 12:37:31,693: WARNING/MainProcess]   File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/app/base.py", line 1229, in backend
+
+[2022-04-29 12:37:31,694: WARNING/MainProcess]     
+[2022-04-29 12:37:31,694: WARNING/MainProcess] return self._local.backend
+[2022-04-29 12:37:31,694: WARNING/MainProcess] 
+
+[2022-04-29 12:37:31,694: WARNING/MainProcess] AttributeError
+[2022-04-29 12:37:31,694: WARNING/MainProcess] : 
+[2022-04-29 12:37:31,695: WARNING/MainProcess] '_thread._local' object has no attribute 'backend'
+[2022-04-29 12:37:31,695: WARNING/MainProcess] 
+
+[2022-04-29 12:37:31,695: WARNING/MainProcess] 
+During handling of the above exception, another exception occurred:
+
+
+[2022-04-29 12:37:31,695: WARNING/MainProcess] Traceback (most recent call last):
+
+[2022-04-29 12:37:31,695: WARNING/MainProcess]   File "/home/ubuntu/Learning/Fero/env/bin/celery", line 11, in <module>
+
+[2022-04-29 12:37:31,695: WARNING/MainProcess]     
+[2022-04-29 12:37:31,695: WARNING/MainProcess] sys.exit(main())
+[2022-04-29 12:37:31,696: WARNING/MainProcess] 
+
+[2022-04-29 12:37:31,696: WARNING/MainProcess]   File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/__main__.py", line 15, in main
+
+[2022-04-29 12:37:31,696: WARNING/MainProcess]     
+[2022-04-29 12:37:31,696: WARNING/MainProcess] sys.exit(_main())
+[2022-04-29 12:37:31,696: WARNING/MainProcess] 
+
+[2022-04-29 12:37:31,696: WARNING/MainProcess]   File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/bin/celery.py", line 213, in main
+
+[2022-04-29 12:37:31,696: WARNING/MainProcess]     
+[2022-04-29 12:37:31,696: WARNING/MainProcess] return celery(auto_envvar_prefix="CELERY")
+[2022-04-29 12:37:31,696: WARNING/MainProcess] 
+
+[2022-04-29 12:37:31,696: WARNING/MainProcess]   File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/click/core.py", line 829, in __call__
+
+[2022-04-29 12:37:31,697: WARNING/MainProcess]     
+[2022-04-29 12:37:31,697: WARNING/MainProcess] return self.main(*args, **kwargs)
+[2022-04-29 12:37:31,697: WARNING/MainProcess] 
+
+[2022-04-29 12:37:31,697: WARNING/MainProcess]   File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/click/core.py", line 782, in main
+
+[2022-04-29 12:37:31,697: WARNING/MainProcess]     
+[2022-04-29 12:37:31,698: WARNING/MainProcess] rv = self.invoke(ctx)
+[2022-04-29 12:37:31,698: WARNING/MainProcess] 
+
+[2022-04-29 12:37:31,698: WARNING/MainProcess]   File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/click/core.py", line 1259, in invoke
+
+[2022-04-29 12:37:31,698: WARNING/MainProcess]     
+[2022-04-29 12:37:31,698: WARNING/MainProcess] return _process_result(sub_ctx.command.invoke(sub_ctx))
+[2022-04-29 12:37:31,698: WARNING/MainProcess] 
+
+[2022-04-29 12:37:31,698: WARNING/MainProcess]   File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/click/core.py", line 1066, in invoke
+
+[2022-04-29 12:37:31,699: WARNING/MainProcess]     
+[2022-04-29 12:37:31,699: WARNING/MainProcess] return ctx.invoke(self.callback, **ctx.params)
+[2022-04-29 12:37:31,699: WARNING/MainProcess] 
+
+[2022-04-29 12:37:31,699: WARNING/MainProcess]   File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/click/core.py", line 610, in invoke
+
+[2022-04-29 12:37:31,700: WARNING/MainProcess]     
+[2022-04-29 12:37:31,700: WARNING/MainProcess] return callback(*args, **kwargs)
+[2022-04-29 12:37:31,700: WARNING/MainProcess] 
+
+[2022-04-29 12:37:31,700: WARNING/MainProcess]   File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/click/decorators.py", line 21, in new_func
+
+[2022-04-29 12:37:31,700: WARNING/MainProcess]     
+[2022-04-29 12:37:31,700: WARNING/MainProcess] return f(get_current_context(), *args, **kwargs)
+[2022-04-29 12:37:31,700: WARNING/MainProcess] 
+
+[2022-04-29 12:37:31,700: WARNING/MainProcess]   File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/bin/base.py", line 133, in caller
+
+[2022-04-29 12:37:31,700: WARNING/MainProcess]     
+[2022-04-29 12:37:31,700: WARNING/MainProcess] return f(ctx, *args, **kwargs)
+[2022-04-29 12:37:31,700: WARNING/MainProcess] 
+
+[2022-04-29 12:37:31,701: WARNING/MainProcess]   File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/bin/beat.py", line 72, in beat
+
+[2022-04-29 12:37:31,701: WARNING/MainProcess]     
+[2022-04-29 12:37:31,701: WARNING/MainProcess] return beat().run()
+[2022-04-29 12:37:31,701: WARNING/MainProcess] 
+
+[2022-04-29 12:37:31,701: WARNING/MainProcess]   File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/apps/beat.py", line 77, in run
+
+[2022-04-29 12:37:31,701: WARNING/MainProcess]     
+[2022-04-29 12:37:31,701: WARNING/MainProcess] self.start_scheduler()
+[2022-04-29 12:37:31,701: WARNING/MainProcess] 
+
+[2022-04-29 12:37:31,701: WARNING/MainProcess]   File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/apps/beat.py", line 105, in start_scheduler
+
+[2022-04-29 12:37:31,702: WARNING/MainProcess]     
+[2022-04-29 12:37:31,702: WARNING/MainProcess] service.start()
+[2022-04-29 12:37:31,702: WARNING/MainProcess] 
+
+[2022-04-29 12:37:31,702: WARNING/MainProcess]   File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/beat.py", line 636, in start
+
+[2022-04-29 12:37:31,702: WARNING/MainProcess]     
+[2022-04-29 12:37:31,702: WARNING/MainProcess] humanize_seconds(self.scheduler.max_interval))
+[2022-04-29 12:37:31,702: WARNING/MainProcess] 
+
+[2022-04-29 12:37:31,702: WARNING/MainProcess]   File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/kombu/utils/objects.py", line 29, in __get__
+
+[2022-04-29 12:37:31,702: WARNING/MainProcess]     
+[2022-04-29 12:37:31,703: WARNING/MainProcess] return super().__get__(instance, owner)
+[2022-04-29 12:37:31,703: WARNING/MainProcess] 
+
+[2022-04-29 12:37:31,703: WARNING/MainProcess]   File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/cached_property.py", line 74, in __get__
+
+[2022-04-29 12:37:31,703: WARNING/MainProcess]     
+[2022-04-29 12:37:31,703: WARNING/MainProcess] return obj_dict.setdefault(name, self.func(obj))
+[2022-04-29 12:37:31,703: WARNING/MainProcess] 
+
+[2022-04-29 12:37:31,703: WARNING/MainProcess]   File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/beat.py", line 680, in scheduler
+
+[2022-04-29 12:37:31,703: WARNING/MainProcess]     
+[2022-04-29 12:37:31,703: WARNING/MainProcess] return self.get_scheduler()
+[2022-04-29 12:37:31,704: WARNING/MainProcess] 
+
+[2022-04-29 12:37:31,704: WARNING/MainProcess]   File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/beat.py", line 675, in get_scheduler
+
+[2022-04-29 12:37:31,704: WARNING/MainProcess]     
+[2022-04-29 12:37:31,704: WARNING/MainProcess] lazy=lazy,
+[2022-04-29 12:37:31,704: WARNING/MainProcess] 
+
+[2022-04-29 12:37:31,704: WARNING/MainProcess]   File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/beat.py", line 515, in __init__
+
+[2022-04-29 12:37:31,704: WARNING/MainProcess]     
+[2022-04-29 12:37:31,705: WARNING/MainProcess] Scheduler.__init__(self, *args, **kwargs)
+[2022-04-29 12:37:31,705: WARNING/MainProcess] 
+
+[2022-04-29 12:37:31,705: WARNING/MainProcess]   File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/beat.py", line 271, in __init__
+
+[2022-04-29 12:37:31,705: WARNING/MainProcess]     
+[2022-04-29 12:37:31,705: WARNING/MainProcess] self.setup_schedule()
+[2022-04-29 12:37:31,705: WARNING/MainProcess] 
+
+[2022-04-29 12:37:31,705: WARNING/MainProcess]   File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/beat.py", line 559, in setup_schedule
+
+[2022-04-29 12:37:31,705: WARNING/MainProcess]     
+[2022-04-29 12:37:31,706: WARNING/MainProcess] self.install_default_entries(self.schedule)
+[2022-04-29 12:37:31,706: WARNING/MainProcess] 
+
+[2022-04-29 12:37:31,706: WARNING/MainProcess]   File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/beat.py", line 276, in install_default_entries
+
+[2022-04-29 12:37:31,706: WARNING/MainProcess]     
+[2022-04-29 12:37:31,706: WARNING/MainProcess] not self.app.backend.supports_autoexpire:
+[2022-04-29 12:37:31,706: WARNING/MainProcess] 
+
+[2022-04-29 12:37:31,706: WARNING/MainProcess]   File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/app/base.py", line 1231, in backend
+
+[2022-04-29 12:37:31,707: WARNING/MainProcess]     
+[2022-04-29 12:37:31,707: WARNING/MainProcess] self._local.backend = new_backend = self._get_backend()
+[2022-04-29 12:37:31,707: WARNING/MainProcess] 
+
+[2022-04-29 12:37:31,707: WARNING/MainProcess]   File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/app/base.py", line 937, in _get_backend
+
+[2022-04-29 12:37:31,707: WARNING/MainProcess]     
+[2022-04-29 12:37:31,707: WARNING/MainProcess] return backend(app=self, url=url)
+[2022-04-29 12:37:31,707: WARNING/MainProcess] 
+
+[2022-04-29 12:37:31,707: WARNING/MainProcess]   File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/backends/redis.py", line 207, in __init__
+
+[2022-04-29 12:37:31,708: WARNING/MainProcess]     
+[2022-04-29 12:37:31,708: WARNING/MainProcess] raise ImproperlyConfigured(E_REDIS_MISSING.strip())
+[2022-04-29 12:37:31,708: WARNING/MainProcess] 
+
+[2022-04-29 12:37:31,708: WARNING/MainProcess] celery.exceptions
+[2022-04-29 12:37:31,708: WARNING/MainProcess] .
+[2022-04-29 12:37:31,708: WARNING/MainProcess] ImproperlyConfigured
+[2022-04-29 12:37:31,708: WARNING/MainProcess] : 
+[2022-04-29 12:37:31,708: WARNING/MainProcess] You need to install the redis library in order to use the Redis result store backend.
+[2022-04-29 12:37:31,708: WARNING/MainProcess] 
+
+celery beat v5.1.2 (sun-harmonics) is starting.
+__    -    ... __   -        _
+LocalTime -> 2022-04-29 12:37:31
+Configuration ->
+    . broker -> amqp://guest:**@localhost:5672//
+    . loader -> celery.loaders.app.AppLoader
+    . scheduler -> celery.beat.PersistentScheduler
+    . db -> celerybeat-schedule
+    . logfile -> [stderr]@%INFO
+    . maxinterval -> 5.00 minutes (300s)
+[2022-04-29 12:37:34,063: INFO/MainProcess] beat: Starting...
+[2022-04-29 12:37:34,066: WARNING/MainProcess] DB Reset: Account for new __version__ field
+[2022-04-29 12:37:34,072: CRITICAL/MainProcess] beat raised exception <class 'celery.exceptions.ImproperlyConfigured'>: ImproperlyConfigured('You need to install the redis library in order to use the Redis result store backend.',)
+Traceback (most recent call last):
+  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/cached_property.py", line 70, in __get__
+    return obj_dict[name]
+KeyError: 'scheduler'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/app/base.py", line 1229, in backend
+    return self._local.backend
+AttributeError: '_thread._local' object has no attribute 'backend'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/apps/beat.py", line 105, in start_scheduler
+    service.start()
+  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/beat.py", line 636, in start
+    humanize_seconds(self.scheduler.max_interval))
+  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/kombu/utils/objects.py", line 29, in __get__
+    return super().__get__(instance, owner)
+  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/cached_property.py", line 74, in __get__
+    return obj_dict.setdefault(name, self.func(obj))
+  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/beat.py", line 680, in scheduler
+    return self.get_scheduler()
+  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/beat.py", line 675, in get_scheduler
+    lazy=lazy,
+  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/beat.py", line 515, in __init__
+    Scheduler.__init__(self, *args, **kwargs)
+  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/beat.py", line 271, in __init__
+    self.setup_schedule()
+  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/beat.py", line 559, in setup_schedule
+    self.install_default_entries(self.schedule)
+  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/beat.py", line 276, in install_default_entries
+    not self.app.backend.supports_autoexpire:
+  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/app/base.py", line 1231, in backend
+    self._local.backend = new_backend = self._get_backend()
+  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/app/base.py", line 937, in _get_backend
+    return backend(app=self, url=url)
+  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/backends/redis.py", line 207, in __init__
+    raise ImproperlyConfigured(E_REDIS_MISSING.strip())
+celery.exceptions.ImproperlyConfigured: You need to install the redis library in order to use the Redis result store backend.
+[2022-04-29 12:37:34,074: WARNING/MainProcess] Traceback (most recent call last):
+
+[2022-04-29 12:37:34,074: WARNING/MainProcess]   File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/cached_property.py", line 70, in __get__
+
+[2022-04-29 12:37:34,074: WARNING/MainProcess]     
+[2022-04-29 12:37:34,074: WARNING/MainProcess] return obj_dict[name]
+[2022-04-29 12:37:34,075: WARNING/MainProcess] 
+
+[2022-04-29 12:37:34,075: WARNING/MainProcess] KeyError
+[2022-04-29 12:37:34,075: WARNING/MainProcess] : 
+[2022-04-29 12:37:34,075: WARNING/MainProcess] 'scheduler'
+[2022-04-29 12:37:34,075: WARNING/MainProcess] 
+
+[2022-04-29 12:37:34,075: WARNING/MainProcess] 
+During handling of the above exception, another exception occurred:
+
+
+[2022-04-29 12:37:34,075: WARNING/MainProcess] Traceback (most recent call last):
+
+[2022-04-29 12:37:34,075: WARNING/MainProcess]   File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/app/base.py", line 1229, in backend
+
+[2022-04-29 12:37:34,076: WARNING/MainProcess]     
+[2022-04-29 12:37:34,076: WARNING/MainProcess] return self._local.backend
+[2022-04-29 12:37:34,076: WARNING/MainProcess] 
+
+[2022-04-29 12:37:34,076: WARNING/MainProcess] AttributeError
+[2022-04-29 12:37:34,076: WARNING/MainProcess] : 
+[2022-04-29 12:37:34,076: WARNING/MainProcess] '_thread._local' object has no attribute 'backend'
+[2022-04-29 12:37:34,076: WARNING/MainProcess] 
+
+[2022-04-29 12:37:34,076: WARNING/MainProcess] 
+During handling of the above exception, another exception occurred:
+
+
+[2022-04-29 12:37:34,076: WARNING/MainProcess] Traceback (most recent call last):
+
+[2022-04-29 12:37:34,076: WARNING/MainProcess]   File "/home/ubuntu/Learning/Fero/env/bin/celery", line 11, in <module>
+
+[2022-04-29 12:37:34,076: WARNING/MainProcess]     
+[2022-04-29 12:37:34,076: WARNING/MainProcess] sys.exit(main())
+[2022-04-29 12:37:34,076: WARNING/MainProcess] 
+
+[2022-04-29 12:37:34,077: WARNING/MainProcess]   File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/__main__.py", line 15, in main
+
+[2022-04-29 12:37:34,077: WARNING/MainProcess]     
+[2022-04-29 12:37:34,077: WARNING/MainProcess] sys.exit(_main())
+[2022-04-29 12:37:34,077: WARNING/MainProcess] 
+
+[2022-04-29 12:37:34,077: WARNING/MainProcess]   File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/bin/celery.py", line 213, in main
+
+[2022-04-29 12:37:34,077: WARNING/MainProcess]     
+[2022-04-29 12:37:34,077: WARNING/MainProcess] return celery(auto_envvar_prefix="CELERY")
+[2022-04-29 12:37:34,077: WARNING/MainProcess] 
+
+[2022-04-29 12:37:34,077: WARNING/MainProcess]   File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/click/core.py", line 829, in __call__
+
+[2022-04-29 12:37:34,078: WARNING/MainProcess]     
+[2022-04-29 12:37:34,078: WARNING/MainProcess] return self.main(*args, **kwargs)
+[2022-04-29 12:37:34,078: WARNING/MainProcess] 
+
+[2022-04-29 12:37:34,078: WARNING/MainProcess]   File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/click/core.py", line 782, in main
+
+[2022-04-29 12:37:34,078: WARNING/MainProcess]     
+[2022-04-29 12:37:34,078: WARNING/MainProcess] rv = self.invoke(ctx)
+[2022-04-29 12:37:34,078: WARNING/MainProcess] 
+
+[2022-04-29 12:37:34,079: WARNING/MainProcess]   File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/click/core.py", line 1259, in invoke
+
+[2022-04-29 12:37:34,079: WARNING/MainProcess]     
+[2022-04-29 12:37:34,079: WARNING/MainProcess] return _process_result(sub_ctx.command.invoke(sub_ctx))
+[2022-04-29 12:37:34,079: WARNING/MainProcess] 
+
+[2022-04-29 12:37:34,079: WARNING/MainProcess]   File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/click/core.py", line 1066, in invoke
+
+[2022-04-29 12:37:34,080: WARNING/MainProcess]     
+[2022-04-29 12:37:34,080: WARNING/MainProcess] return ctx.invoke(self.callback, **ctx.params)
+[2022-04-29 12:37:34,080: WARNING/MainProcess] 
+
+[2022-04-29 12:37:34,080: WARNING/MainProcess]   File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/click/core.py", line 610, in invoke
+
+[2022-04-29 12:37:34,080: WARNING/MainProcess]     
+[2022-04-29 12:37:34,080: WARNING/MainProcess] return callback(*args, **kwargs)
+[2022-04-29 12:37:34,080: WARNING/MainProcess] 
+
+[2022-04-29 12:37:34,080: WARNING/MainProcess]   File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/click/decorators.py", line 21, in new_func
+
+[2022-04-29 12:37:34,081: WARNING/MainProcess]     
+[2022-04-29 12:37:34,081: WARNING/MainProcess] return f(get_current_context(), *args, **kwargs)
+[2022-04-29 12:37:34,081: WARNING/MainProcess] 
+
+[2022-04-29 12:37:34,081: WARNING/MainProcess]   File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/bin/base.py", line 133, in caller
+
+[2022-04-29 12:37:34,081: WARNING/MainProcess]     
+[2022-04-29 12:37:34,081: WARNING/MainProcess] return f(ctx, *args, **kwargs)
+[2022-04-29 12:37:34,081: WARNING/MainProcess] 
+
+[2022-04-29 12:37:34,081: WARNING/MainProcess]   File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/bin/beat.py", line 72, in beat
+
+[2022-04-29 12:37:34,081: WARNING/MainProcess]     
+[2022-04-29 12:37:34,082: WARNING/MainProcess] return beat().run()
+[2022-04-29 12:37:34,082: WARNING/MainProcess] 
+
+[2022-04-29 12:37:34,082: WARNING/MainProcess]   File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/apps/beat.py", line 77, in run
+
+[2022-04-29 12:37:34,082: WARNING/MainProcess]     
+[2022-04-29 12:37:34,082: WARNING/MainProcess] self.start_scheduler()
+[2022-04-29 12:37:34,082: WARNING/MainProcess] 
+
+[2022-04-29 12:37:34,082: WARNING/MainProcess]   File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/apps/beat.py", line 105, in start_scheduler
+
+[2022-04-29 12:37:34,082: WARNING/MainProcess]     
+[2022-04-29 12:37:34,082: WARNING/MainProcess] service.start()
+[2022-04-29 12:37:34,082: WARNING/MainProcess] 
+
+[2022-04-29 12:37:34,083: WARNING/MainProcess]   File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/beat.py", line 636, in start
+
+[2022-04-29 12:37:34,083: WARNING/MainProcess]     
+[2022-04-29 12:37:34,083: WARNING/MainProcess] humanize_seconds(self.scheduler.max_interval))
+[2022-04-29 12:37:34,083: WARNING/MainProcess] 
+
+[2022-04-29 12:37:34,083: WARNING/MainProcess]   File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/kombu/utils/objects.py", line 29, in __get__
+
+[2022-04-29 12:37:34,083: WARNING/MainProcess]     
+[2022-04-29 12:37:34,083: WARNING/MainProcess] return super().__get__(instance, owner)
+[2022-04-29 12:37:34,083: WARNING/MainProcess] 
+
+[2022-04-29 12:37:34,083: WARNING/MainProcess]   File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/cached_property.py", line 74, in __get__
+
+[2022-04-29 12:37:34,084: WARNING/MainProcess]     
+[2022-04-29 12:37:34,084: WARNING/MainProcess] return obj_dict.setdefault(name, self.func(obj))
+[2022-04-29 12:37:34,084: WARNING/MainProcess] 
+
+[2022-04-29 12:37:34,084: WARNING/MainProcess]   File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/beat.py", line 680, in scheduler
+
+[2022-04-29 12:37:34,084: WARNING/MainProcess]     
+[2022-04-29 12:37:34,084: WARNING/MainProcess] return self.get_scheduler()
+[2022-04-29 12:37:34,084: WARNING/MainProcess] 
+
+[2022-04-29 12:37:34,084: WARNING/MainProcess]   File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/beat.py", line 675, in get_scheduler
+
+[2022-04-29 12:37:34,085: WARNING/MainProcess]     
+[2022-04-29 12:37:34,085: WARNING/MainProcess] lazy=lazy,
+[2022-04-29 12:37:34,085: WARNING/MainProcess] 
+
+[2022-04-29 12:37:34,085: WARNING/MainProcess]   File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/beat.py", line 515, in __init__
+
+[2022-04-29 12:37:34,085: WARNING/MainProcess]     
+[2022-04-29 12:37:34,085: WARNING/MainProcess] Scheduler.__init__(self, *args, **kwargs)
+[2022-04-29 12:37:34,085: WARNING/MainProcess] 
+
+[2022-04-29 12:37:34,085: WARNING/MainProcess]   File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/beat.py", line 271, in __init__
+
+[2022-04-29 12:37:34,086: WARNING/MainProcess]     
+[2022-04-29 12:37:34,086: WARNING/MainProcess] self.setup_schedule()
+[2022-04-29 12:37:34,086: WARNING/MainProcess] 
+
+[2022-04-29 12:37:34,086: WARNING/MainProcess]   File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/beat.py", line 559, in setup_schedule
+
+[2022-04-29 12:37:34,086: WARNING/MainProcess]     
+[2022-04-29 12:37:34,086: WARNING/MainProcess] self.install_default_entries(self.schedule)
+[2022-04-29 12:37:34,086: WARNING/MainProcess] 
+
+[2022-04-29 12:37:34,086: WARNING/MainProcess]   File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/beat.py", line 276, in install_default_entries
+
+[2022-04-29 12:37:34,087: WARNING/MainProcess]     
+[2022-04-29 12:37:34,087: WARNING/MainProcess] not self.app.backend.supports_autoexpire:
+[2022-04-29 12:37:34,087: WARNING/MainProcess] 
+
+[2022-04-29 12:37:34,087: WARNING/MainProcess]   File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/app/base.py", line 1231, in backend
+
+[2022-04-29 12:37:34,087: WARNING/MainProcess]     
+[2022-04-29 12:37:34,087: WARNING/MainProcess] self._local.backend = new_backend = self._get_backend()
+[2022-04-29 12:37:34,087: WARNING/MainProcess] 
+
+[2022-04-29 12:37:34,088: WARNING/MainProcess]   File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/app/base.py", line 937, in _get_backend
+
+[2022-04-29 12:37:34,088: WARNING/MainProcess]     
+[2022-04-29 12:37:34,088: WARNING/MainProcess] return backend(app=self, url=url)
+[2022-04-29 12:37:34,088: WARNING/MainProcess] 
+
+[2022-04-29 12:37:34,088: WARNING/MainProcess]   File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/backends/redis.py", line 207, in __init__
+
+[2022-04-29 12:37:34,088: WARNING/MainProcess]     
+[2022-04-29 12:37:34,088: WARNING/MainProcess] raise ImproperlyConfigured(E_REDIS_MISSING.strip())
+[2022-04-29 12:37:34,088: WARNING/MainProcess] 
+
+[2022-04-29 12:37:34,089: WARNING/MainProcess] celery.exceptions
+[2022-04-29 12:37:34,089: WARNING/MainProcess] .
+[2022-04-29 12:37:34,089: WARNING/MainProcess] ImproperlyConfigured
+[2022-04-29 12:37:34,089: WARNING/MainProcess] : 
+[2022-04-29 12:37:34,089: WARNING/MainProcess] You need to install the redis library in order to use the Redis result store backend.
+[2022-04-29 12:37:34,089: WARNING/MainProcess] 
+
+celery beat v5.1.2 (sun-harmonics) is starting.
+__    -    ... __   -        _
+LocalTime -> 2022-04-29 12:37:34
+Configuration ->
+    . broker -> amqp://guest:**@localhost:5672//
+    . loader -> celery.loaders.app.AppLoader
+    . scheduler -> celery.beat.PersistentScheduler
+    . db -> celerybeat-schedule
+    . logfile -> [stderr]@%INFO
+    . maxinterval -> 5.00 minutes (300s)
+[2022-04-29 12:37:37,266: INFO/MainProcess] beat: Starting...
+[2022-04-29 12:37:37,269: WARNING/MainProcess] DB Reset: Account for new __version__ field
+[2022-04-29 12:37:37,276: CRITICAL/MainProcess] beat raised exception <class 'celery.exceptions.ImproperlyConfigured'>: ImproperlyConfigured('You need to install the redis library in order to use the Redis result store backend.',)
+Traceback (most recent call last):
+  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/cached_property.py", line 70, in __get__
+    return obj_dict[name]
+KeyError: 'scheduler'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/app/base.py", line 1229, in backend
+    return self._local.backend
+AttributeError: '_thread._local' object has no attribute 'backend'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/apps/beat.py", line 105, in start_scheduler
+    service.start()
+  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/beat.py", line 636, in start
+    humanize_seconds(self.scheduler.max_interval))
+  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/kombu/utils/objects.py", line 29, in __get__
+    return super().__get__(instance, owner)
+  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/cached_property.py", line 74, in __get__
+    return obj_dict.setdefault(name, self.func(obj))
+  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/beat.py", line 680, in scheduler
+    return self.get_scheduler()
+  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/beat.py", line 675, in get_scheduler
+    lazy=lazy,
+  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/beat.py", line 515, in __init__
+    Scheduler.__init__(self, *args, **kwargs)
+  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/beat.py", line 271, in __init__
+    self.setup_schedule()
+  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/beat.py", line 559, in setup_schedule
+    self.install_default_entries(self.schedule)
+  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/beat.py", line 276, in install_default_entries
+    not self.app.backend.supports_autoexpire:
+  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/app/base.py", line 1231, in backend
+    self._local.backend = new_backend = self._get_backend()
+  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/app/base.py", line 937, in _get_backend
+    return backend(app=self, url=url)
+  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/backends/redis.py", line 207, in __init__
+    raise ImproperlyConfigured(E_REDIS_MISSING.strip())
+celery.exceptions.ImproperlyConfigured: You need to install the redis library in order to use the Redis result store backend.
+[2022-04-29 12:37:37,277: WARNING/MainProcess] Traceback (most recent call last):
+
+[2022-04-29 12:37:37,278: WARNING/MainProcess]   File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/cached_property.py", line 70, in __get__
+
+[2022-04-29 12:37:37,278: WARNING/MainProcess]     
+[2022-04-29 12:37:37,278: WARNING/MainProcess] return obj_dict[name]
+[2022-04-29 12:37:37,278: WARNING/MainProcess] 
+
+[2022-04-29 12:37:37,278: WARNING/MainProcess] KeyError
+[2022-04-29 12:37:37,278: WARNING/MainProcess] : 
+[2022-04-29 12:37:37,278: WARNING/MainProcess] 'scheduler'
+[2022-04-29 12:37:37,278: WARNING/MainProcess] 
+
+[2022-04-29 12:37:37,278: WARNING/MainProcess] 
+During handling of the above exception, another exception occurred:
+
+
+[2022-04-29 12:37:37,279: WARNING/MainProcess] Traceback (most recent call last):
+
+[2022-04-29 12:37:37,279: WARNING/MainProcess]   File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/app/base.py", line 1229, in backend
+
+[2022-04-29 12:37:37,279: WARNING/MainProcess]     
+[2022-04-29 12:37:37,279: WARNING/MainProcess] return self._local.backend
+[2022-04-29 12:37:37,279: WARNING/MainProcess] 
+
+[2022-04-29 12:37:37,279: WARNING/MainProcess] AttributeError
+[2022-04-29 12:37:37,279: WARNING/MainProcess] : 
+[2022-04-29 12:37:37,279: WARNING/MainProcess] '_thread._local' object has no attribute 'backend'
+[2022-04-29 12:37:37,280: WARNING/MainProcess] 
+
+[2022-04-29 12:37:37,280: WARNING/MainProcess] 
+During handling of the above exception, another exception occurred:
+
+
+[2022-04-29 12:37:37,280: WARNING/MainProcess] Traceback (most recent call last):
+
+[2022-04-29 12:37:37,280: WARNING/MainProcess]   File "/home/ubuntu/Learning/Fero/env/bin/celery", line 11, in <module>
+
+[2022-04-29 12:37:37,280: WARNING/MainProcess]     
+[2022-04-29 12:37:37,280: WARNING/MainProcess] sys.exit(main())
+[2022-04-29 12:37:37,280: WARNING/MainProcess] 
+
+[2022-04-29 12:37:37,280: WARNING/MainProcess]   File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/__main__.py", line 15, in main
+
+[2022-04-29 12:37:37,280: WARNING/MainProcess]     
+[2022-04-29 12:37:37,280: WARNING/MainProcess] sys.exit(_main())
+[2022-04-29 12:37:37,280: WARNING/MainProcess] 
+
+[2022-04-29 12:37:37,280: WARNING/MainProcess]   File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/bin/celery.py", line 213, in main
+
+[2022-04-29 12:37:37,281: WARNING/MainProcess]     
+[2022-04-29 12:37:37,281: WARNING/MainProcess] return celery(auto_envvar_prefix="CELERY")
+[2022-04-29 12:37:37,281: WARNING/MainProcess] 
+
+[2022-04-29 12:37:37,281: WARNING/MainProcess]   File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/click/core.py", line 829, in __call__
+
+[2022-04-29 12:37:37,281: WARNING/MainProcess]     
+[2022-04-29 12:37:37,281: WARNING/MainProcess] return self.main(*args, **kwargs)
+[2022-04-29 12:37:37,281: WARNING/MainProcess] 
+
+[2022-04-29 12:37:37,281: WARNING/MainProcess]   File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/click/core.py", line 782, in main
+
+[2022-04-29 12:37:37,282: WARNING/MainProcess]     
+[2022-04-29 12:37:37,282: WARNING/MainProcess] rv = self.invoke(ctx)
+[2022-04-29 12:37:37,282: WARNING/MainProcess] 
+
+[2022-04-29 12:37:37,282: WARNING/MainProcess]   File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/click/core.py", line 1259, in invoke
+
+[2022-04-29 12:37:37,283: WARNING/MainProcess]     
+[2022-04-29 12:37:37,283: WARNING/MainProcess] return _process_result(sub_ctx.command.invoke(sub_ctx))
+[2022-04-29 12:37:37,283: WARNING/MainProcess] 
+
+[2022-04-29 12:37:37,283: WARNING/MainProcess]   File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/click/core.py", line 1066, in invoke
+
+[2022-04-29 12:37:37,283: WARNING/MainProcess]     
+[2022-04-29 12:37:37,283: WARNING/MainProcess] return ctx.invoke(self.callback, **ctx.params)
+[2022-04-29 12:37:37,283: WARNING/MainProcess] 
+
+[2022-04-29 12:37:37,284: WARNING/MainProcess]   File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/click/core.py", line 610, in invoke
+
+[2022-04-29 12:37:37,284: WARNING/MainProcess]     
+[2022-04-29 12:37:37,284: WARNING/MainProcess] return callback(*args, **kwargs)
+[2022-04-29 12:37:37,284: WARNING/MainProcess] 
+
+[2022-04-29 12:37:37,284: WARNING/MainProcess]   File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/click/decorators.py", line 21, in new_func
+
+[2022-04-29 12:37:37,284: WARNING/MainProcess]     
+[2022-04-29 12:37:37,284: WARNING/MainProcess] return f(get_current_context(), *args, **kwargs)
+[2022-04-29 12:37:37,284: WARNING/MainProcess] 
+
+[2022-04-29 12:37:37,284: WARNING/MainProcess]   File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/bin/base.py", line 133, in caller
+
+[2022-04-29 12:37:37,285: WARNING/MainProcess]     
+[2022-04-29 12:37:37,285: WARNING/MainProcess] return f(ctx, *args, **kwargs)
+[2022-04-29 12:37:37,285: WARNING/MainProcess] 
+
+[2022-04-29 12:37:37,285: WARNING/MainProcess]   File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/bin/beat.py", line 72, in beat
+
+[2022-04-29 12:37:37,285: WARNING/MainProcess]     
+[2022-04-29 12:37:37,285: WARNING/MainProcess] return beat().run()
+[2022-04-29 12:37:37,285: WARNING/MainProcess] 
+
+[2022-04-29 12:37:37,285: WARNING/MainProcess]   File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/apps/beat.py", line 77, in run
+
+[2022-04-29 12:37:37,285: WARNING/MainProcess]     
+[2022-04-29 12:37:37,285: WARNING/MainProcess] self.start_scheduler()
+[2022-04-29 12:37:37,285: WARNING/MainProcess] 
+
+[2022-04-29 12:37:37,286: WARNING/MainProcess]   File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/apps/beat.py", line 105, in start_scheduler
+
+[2022-04-29 12:37:37,286: WARNING/MainProcess]     
+[2022-04-29 12:37:37,286: WARNING/MainProcess] service.start()
+[2022-04-29 12:37:37,286: WARNING/MainProcess] 
+
+[2022-04-29 12:37:37,286: WARNING/MainProcess]   File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/beat.py", line 636, in start
+
+[2022-04-29 12:37:37,287: WARNING/MainProcess]     
+[2022-04-29 12:37:37,287: WARNING/MainProcess] humanize_seconds(self.scheduler.max_interval))
+[2022-04-29 12:37:37,287: WARNING/MainProcess] 
+
+[2022-04-29 12:37:37,287: WARNING/MainProcess]   File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/kombu/utils/objects.py", line 29, in __get__
+
+[2022-04-29 12:37:37,287: WARNING/MainProcess]     
+[2022-04-29 12:37:37,287: WARNING/MainProcess] return super().__get__(instance, owner)
+[2022-04-29 12:37:37,287: WARNING/MainProcess] 
+
+[2022-04-29 12:37:37,287: WARNING/MainProcess]   File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/cached_property.py", line 74, in __get__
+
+[2022-04-29 12:37:37,287: WARNING/MainProcess]     
+[2022-04-29 12:37:37,287: WARNING/MainProcess] return obj_dict.setdefault(name, self.func(obj))
+[2022-04-29 12:37:37,287: WARNING/MainProcess] 
+
+[2022-04-29 12:37:37,288: WARNING/MainProcess]   File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/beat.py", line 680, in scheduler
+
+[2022-04-29 12:37:37,288: WARNING/MainProcess]     
+[2022-04-29 12:37:37,288: WARNING/MainProcess] return self.get_scheduler()
+[2022-04-29 12:37:37,288: WARNING/MainProcess] 
+
+[2022-04-29 12:37:37,288: WARNING/MainProcess]   File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/beat.py", line 675, in get_scheduler
+
+[2022-04-29 12:37:37,288: WARNING/MainProcess]     
+[2022-04-29 12:37:37,288: WARNING/MainProcess] lazy=lazy,
+[2022-04-29 12:37:37,289: WARNING/MainProcess] 
+
+[2022-04-29 12:37:37,289: WARNING/MainProcess]   File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/beat.py", line 515, in __init__
+
+[2022-04-29 12:37:37,289: WARNING/MainProcess]     
+[2022-04-29 12:37:37,289: WARNING/MainProcess] Scheduler.__init__(self, *args, **kwargs)
+[2022-04-29 12:37:37,289: WARNING/MainProcess] 
+
+[2022-04-29 12:37:37,289: WARNING/MainProcess]   File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/beat.py", line 271, in __init__
+
+[2022-04-29 12:37:37,289: WARNING/MainProcess]     
+[2022-04-29 12:37:37,289: WARNING/MainProcess] self.setup_schedule()
+[2022-04-29 12:37:37,289: WARNING/MainProcess] 
+
+[2022-04-29 12:37:37,290: WARNING/MainProcess]   File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/beat.py", line 559, in setup_schedule
+
+[2022-04-29 12:37:37,290: WARNING/MainProcess]     
+[2022-04-29 12:37:37,290: WARNING/MainProcess] self.install_default_entries(self.schedule)
+[2022-04-29 12:37:37,290: WARNING/MainProcess] 
+
+[2022-04-29 12:37:37,290: WARNING/MainProcess]   File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/beat.py", line 276, in install_default_entries
+
+[2022-04-29 12:37:37,290: WARNING/MainProcess]     
+[2022-04-29 12:37:37,290: WARNING/MainProcess] not self.app.backend.supports_autoexpire:
+[2022-04-29 12:37:37,290: WARNING/MainProcess] 
+
+[2022-04-29 12:37:37,291: WARNING/MainProcess]   File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/app/base.py", line 1231, in backend
+
+[2022-04-29 12:37:37,291: WARNING/MainProcess]     
+[2022-04-29 12:37:37,291: WARNING/MainProcess] self._local.backend = new_backend = self._get_backend()
+[2022-04-29 12:37:37,291: WARNING/MainProcess] 
+
+[2022-04-29 12:37:37,291: WARNING/MainProcess]   File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/app/base.py", line 937, in _get_backend
+
+[2022-04-29 12:37:37,292: WARNING/MainProcess]     
+[2022-04-29 12:37:37,292: WARNING/MainProcess] return backend(app=self, url=url)
+[2022-04-29 12:37:37,292: WARNING/MainProcess] 
+
+[2022-04-29 12:37:37,292: WARNING/MainProcess]   File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/backends/redis.py", line 207, in __init__
+
+[2022-04-29 12:37:37,292: WARNING/MainProcess]     
+[2022-04-29 12:37:37,292: WARNING/MainProcess] raise ImproperlyConfigured(E_REDIS_MISSING.strip())
+[2022-04-29 12:37:37,292: WARNING/MainProcess] 
+
+[2022-04-29 12:37:37,292: WARNING/MainProcess] celery.exceptions
+[2022-04-29 12:37:37,292: WARNING/MainProcess] .
+[2022-04-29 12:37:37,293: WARNING/MainProcess] ImproperlyConfigured
+[2022-04-29 12:37:37,293: WARNING/MainProcess] : 
+[2022-04-29 12:37:37,293: WARNING/MainProcess] You need to install the redis library in order to use the Redis result store backend.
+[2022-04-29 12:37:37,293: WARNING/MainProcess] 
+
+celery beat v5.1.2 (sun-harmonics) is starting.
+__    -    ... __   -        _
+LocalTime -> 2022-04-29 12:37:37
+Configuration ->
+    . broker -> amqp://guest:**@localhost:5672//
+    . loader -> celery.loaders.app.AppLoader
+    . scheduler -> celery.beat.PersistentScheduler
+    . db -> celerybeat-schedule
+    . logfile -> [stderr]@%INFO
+    . maxinterval -> 5.00 minutes (300s)
+[2022-04-29 12:37:41,889: INFO/MainProcess] beat: Starting...
+[2022-04-29 12:37:41,894: WARNING/MainProcess] DB Reset: Account for new __version__ field
+[2022-04-29 12:37:41,903: CRITICAL/MainProcess] beat raised exception <class 'celery.exceptions.ImproperlyConfigured'>: ImproperlyConfigured('You need to install the redis library in order to use the Redis result store backend.',)
+Traceback (most recent call last):
+  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/cached_property.py", line 70, in __get__
+    return obj_dict[name]
+KeyError: 'scheduler'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/app/base.py", line 1229, in backend
+    return self._local.backend
+AttributeError: '_thread._local' object has no attribute 'backend'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/apps/beat.py", line 105, in start_scheduler
+    service.start()
+  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/beat.py", line 636, in start
+    humanize_seconds(self.scheduler.max_interval))
+  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/kombu/utils/objects.py", line 29, in __get__
+    return super().__get__(instance, owner)
+  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/cached_property.py", line 74, in __get__
+    return obj_dict.setdefault(name, self.func(obj))
+  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/beat.py", line 680, in scheduler
+    return self.get_scheduler()
+  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/beat.py", line 675, in get_scheduler
+    lazy=lazy,
+  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/beat.py", line 515, in __init__
+    Scheduler.__init__(self, *args, **kwargs)
+  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/beat.py", line 271, in __init__
+    self.setup_schedule()
+  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/beat.py", line 559, in setup_schedule
+    self.install_default_entries(self.schedule)
+  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/beat.py", line 276, in install_default_entries
+    not self.app.backend.supports_autoexpire:
+  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/app/base.py", line 1231, in backend
+    self._local.backend = new_backend = self._get_backend()
+  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/app/base.py", line 937, in _get_backend
+    return backend(app=self, url=url)
+  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/backends/redis.py", line 207, in __init__
+    raise ImproperlyConfigured(E_REDIS_MISSING.strip())
+celery.exceptions.ImproperlyConfigured: You need to install the redis library in order to use the Redis result store backend.
+[2022-04-29 12:37:41,906: WARNING/MainProcess] Traceback (most recent call last):
+
+[2022-04-29 12:37:41,906: WARNING/MainProcess]   File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/cached_property.py", line 70, in __get__
+
+[2022-04-29 12:37:41,906: WARNING/MainProcess]     
+[2022-04-29 12:37:41,907: WARNING/MainProcess] return obj_dict[name]
+[2022-04-29 12:37:41,907: WARNING/MainProcess] 
+
+[2022-04-29 12:37:41,907: WARNING/MainProcess] KeyError
+[2022-04-29 12:37:41,907: WARNING/MainProcess] : 
+[2022-04-29 12:37:41,907: WARNING/MainProcess] 'scheduler'
+[2022-04-29 12:37:41,907: WARNING/MainProcess] 
+
+[2022-04-29 12:37:41,908: WARNING/MainProcess] 
+During handling of the above exception, another exception occurred:
+
+
+[2022-04-29 12:37:41,908: WARNING/MainProcess] Traceback (most recent call last):
+
+[2022-04-29 12:37:41,908: WARNING/MainProcess]   File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/app/base.py", line 1229, in backend
+
+[2022-04-29 12:37:41,909: WARNING/MainProcess]     
+[2022-04-29 12:37:41,909: WARNING/MainProcess] return self._local.backend
+[2022-04-29 12:37:41,909: WARNING/MainProcess] 
+
+[2022-04-29 12:37:41,909: WARNING/MainProcess] AttributeError
+[2022-04-29 12:37:41,909: WARNING/MainProcess] : 
+[2022-04-29 12:37:41,909: WARNING/MainProcess] '_thread._local' object has no attribute 'backend'
+[2022-04-29 12:37:41,909: WARNING/MainProcess] 
+
+[2022-04-29 12:37:41,909: WARNING/MainProcess] 
+During handling of the above exception, another exception occurred:
+
+
+[2022-04-29 12:37:41,910: WARNING/MainProcess] Traceback (most recent call last):
+
+[2022-04-29 12:37:41,910: WARNING/MainProcess]   File "/home/ubuntu/Learning/Fero/env/bin/celery", line 11, in <module>
+
+[2022-04-29 12:37:41,910: WARNING/MainProcess]     
+[2022-04-29 12:37:41,910: WARNING/MainProcess] sys.exit(main())
+[2022-04-29 12:37:41,910: WARNING/MainProcess] 
+
+[2022-04-29 12:37:41,910: WARNING/MainProcess]   File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/__main__.py", line 15, in main
+
+[2022-04-29 12:37:41,910: WARNING/MainProcess]     
+[2022-04-29 12:37:41,911: WARNING/MainProcess] sys.exit(_main())
+[2022-04-29 12:37:41,911: WARNING/MainProcess] 
+
+[2022-04-29 12:37:41,911: WARNING/MainProcess]   File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/bin/celery.py", line 213, in main
+
+[2022-04-29 12:37:41,911: WARNING/MainProcess]     
+[2022-04-29 12:37:41,911: WARNING/MainProcess] return celery(auto_envvar_prefix="CELERY")
+[2022-04-29 12:37:41,911: WARNING/MainProcess] 
+
+[2022-04-29 12:37:41,911: WARNING/MainProcess]   File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/click/core.py", line 829, in __call__
+
+[2022-04-29 12:37:41,912: WARNING/MainProcess]     
+[2022-04-29 12:37:41,912: WARNING/MainProcess] return self.main(*args, **kwargs)
+[2022-04-29 12:37:41,912: WARNING/MainProcess] 
+
+[2022-04-29 12:37:41,912: WARNING/MainProcess]   File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/click/core.py", line 782, in main
+
+[2022-04-29 12:37:41,913: WARNING/MainProcess]     
+[2022-04-29 12:37:41,913: WARNING/MainProcess] rv = self.invoke(ctx)
+[2022-04-29 12:37:41,913: WARNING/MainProcess] 
+
+[2022-04-29 12:37:41,914: WARNING/MainProcess]   File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/click/core.py", line 1259, in invoke
+
+[2022-04-29 12:37:41,915: WARNING/MainProcess]     
+[2022-04-29 12:37:41,915: WARNING/MainProcess] return _process_result(sub_ctx.command.invoke(sub_ctx))
+[2022-04-29 12:37:41,915: WARNING/MainProcess] 
+
+[2022-04-29 12:37:41,915: WARNING/MainProcess]   File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/click/core.py", line 1066, in invoke
+
+[2022-04-29 12:37:41,916: WARNING/MainProcess]     
+[2022-04-29 12:37:41,916: WARNING/MainProcess] return ctx.invoke(self.callback, **ctx.params)
+[2022-04-29 12:37:41,916: WARNING/MainProcess] 
+
+[2022-04-29 12:37:41,916: WARNING/MainProcess]   File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/click/core.py", line 610, in invoke
+
+[2022-04-29 12:37:41,917: WARNING/MainProcess]     
+[2022-04-29 12:37:41,917: WARNING/MainProcess] return callback(*args, **kwargs)
+[2022-04-29 12:37:41,917: WARNING/MainProcess] 
+
+[2022-04-29 12:37:41,917: WARNING/MainProcess]   File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/click/decorators.py", line 21, in new_func
+
+[2022-04-29 12:37:41,917: WARNING/MainProcess]     
+[2022-04-29 12:37:41,917: WARNING/MainProcess] return f(get_current_context(), *args, **kwargs)
+[2022-04-29 12:37:41,917: WARNING/MainProcess] 
+
+[2022-04-29 12:37:41,918: WARNING/MainProcess]   File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/bin/base.py", line 133, in caller
+
+[2022-04-29 12:37:41,918: WARNING/MainProcess]     
+[2022-04-29 12:37:41,918: WARNING/MainProcess] return f(ctx, *args, **kwargs)
+[2022-04-29 12:37:41,918: WARNING/MainProcess] 
+
+[2022-04-29 12:37:41,918: WARNING/MainProcess]   File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/bin/beat.py", line 72, in beat
+
+[2022-04-29 12:37:41,919: WARNING/MainProcess]     
+[2022-04-29 12:37:41,919: WARNING/MainProcess] return beat().run()
+[2022-04-29 12:37:41,919: WARNING/MainProcess] 
+
+[2022-04-29 12:37:41,919: WARNING/MainProcess]   File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/apps/beat.py", line 77, in run
+
+[2022-04-29 12:37:41,919: WARNING/MainProcess]     
+[2022-04-29 12:37:41,919: WARNING/MainProcess] self.start_scheduler()
+[2022-04-29 12:37:41,919: WARNING/MainProcess] 
+
+[2022-04-29 12:37:41,919: WARNING/MainProcess]   File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/apps/beat.py", line 105, in start_scheduler
+
+[2022-04-29 12:37:41,920: WARNING/MainProcess]     
+[2022-04-29 12:37:41,920: WARNING/MainProcess] service.start()
+[2022-04-29 12:37:41,920: WARNING/MainProcess] 
+
+[2022-04-29 12:37:41,920: WARNING/MainProcess]   File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/beat.py", line 636, in start
+
+[2022-04-29 12:37:41,921: WARNING/MainProcess]     
+[2022-04-29 12:37:41,921: WARNING/MainProcess] humanize_seconds(self.scheduler.max_interval))
+[2022-04-29 12:37:41,921: WARNING/MainProcess] 
+
+[2022-04-29 12:37:41,921: WARNING/MainProcess]   File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/kombu/utils/objects.py", line 29, in __get__
+
+[2022-04-29 12:37:41,921: WARNING/MainProcess]     
+[2022-04-29 12:37:41,921: WARNING/MainProcess] return super().__get__(instance, owner)
+[2022-04-29 12:37:41,921: WARNING/MainProcess] 
+
+[2022-04-29 12:37:41,922: WARNING/MainProcess]   File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/cached_property.py", line 74, in __get__
+
+[2022-04-29 12:37:41,922: WARNING/MainProcess]     
+[2022-04-29 12:37:41,922: WARNING/MainProcess] return obj_dict.setdefault(name, self.func(obj))
+[2022-04-29 12:37:41,922: WARNING/MainProcess] 
+
+[2022-04-29 12:37:41,922: WARNING/MainProcess]   File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/beat.py", line 680, in scheduler
+
+[2022-04-29 12:37:41,923: WARNING/MainProcess]     
+[2022-04-29 12:37:41,923: WARNING/MainProcess] return self.get_scheduler()
+[2022-04-29 12:37:41,923: WARNING/MainProcess] 
+
+[2022-04-29 12:37:41,923: WARNING/MainProcess]   File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/beat.py", line 675, in get_scheduler
+
+[2022-04-29 12:37:41,924: WARNING/MainProcess]     
+[2022-04-29 12:37:41,924: WARNING/MainProcess] lazy=lazy,
+[2022-04-29 12:37:41,924: WARNING/MainProcess] 
+
+[2022-04-29 12:37:41,924: WARNING/MainProcess]   File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/beat.py", line 515, in __init__
+
+[2022-04-29 12:37:41,924: WARNING/MainProcess]     
+[2022-04-29 12:37:41,925: WARNING/MainProcess] Scheduler.__init__(self, *args, **kwargs)
+[2022-04-29 12:37:41,925: WARNING/MainProcess] 
+
+[2022-04-29 12:37:41,925: WARNING/MainProcess]   File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/beat.py", line 271, in __init__
+
+[2022-04-29 12:37:41,925: WARNING/MainProcess]     
+[2022-04-29 12:37:41,925: WARNING/MainProcess] self.setup_schedule()
+[2022-04-29 12:37:41,925: WARNING/MainProcess] 
+
+[2022-04-29 12:37:41,926: WARNING/MainProcess]   File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/beat.py", line 559, in setup_schedule
+
+[2022-04-29 12:37:41,926: WARNING/MainProcess]     
+[2022-04-29 12:37:41,926: WARNING/MainProcess] self.install_default_entries(self.schedule)
+[2022-04-29 12:37:41,926: WARNING/MainProcess] 
+
+[2022-04-29 12:37:41,927: WARNING/MainProcess]   File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/beat.py", line 276, in install_default_entries
+
+[2022-04-29 12:37:41,927: WARNING/MainProcess]     
+[2022-04-29 12:37:41,927: WARNING/MainProcess] not self.app.backend.supports_autoexpire:
+[2022-04-29 12:37:41,927: WARNING/MainProcess] 
+
+[2022-04-29 12:37:41,928: WARNING/MainProcess]   File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/app/base.py", line 1231, in backend
+
+[2022-04-29 12:37:41,928: WARNING/MainProcess]     
+[2022-04-29 12:37:41,929: WARNING/MainProcess] self._local.backend = new_backend = self._get_backend()
+[2022-04-29 12:37:41,929: WARNING/MainProcess] 
+
+[2022-04-29 12:37:41,929: WARNING/MainProcess]   File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/app/base.py", line 937, in _get_backend
+
+[2022-04-29 12:37:41,930: WARNING/MainProcess]     
+[2022-04-29 12:37:41,930: WARNING/MainProcess] return backend(app=self, url=url)
+[2022-04-29 12:37:41,930: WARNING/MainProcess] 
+
+[2022-04-29 12:37:41,930: WARNING/MainProcess]   File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/backends/redis.py", line 207, in __init__
+
+[2022-04-29 12:37:41,931: WARNING/MainProcess]     
+[2022-04-29 12:37:41,931: WARNING/MainProcess] raise ImproperlyConfigured(E_REDIS_MISSING.strip())
+[2022-04-29 12:37:41,931: WARNING/MainProcess] 
+
+[2022-04-29 12:37:41,931: WARNING/MainProcess] celery.exceptions
+[2022-04-29 12:37:41,931: WARNING/MainProcess] .
+[2022-04-29 12:37:41,931: WARNING/MainProcess] ImproperlyConfigured
+[2022-04-29 12:37:41,931: WARNING/MainProcess] : 
+[2022-04-29 12:37:41,931: WARNING/MainProcess] You need to install the redis library in order to use the Redis result store backend.
+[2022-04-29 12:37:41,932: WARNING/MainProcess] 
+
+celery beat v5.1.2 (sun-harmonics) is starting.
+__    -    ... __   -        _
+LocalTime -> 2022-04-29 12:37:41
+Configuration ->
+    . broker -> amqp://guest:**@localhost:5672//
+    . loader -> celery.loaders.app.AppLoader
+    . scheduler -> celery.beat.PersistentScheduler
+    . db -> celerybeat-schedule
+    . logfile -> [stderr]@%INFO
+    . maxinterval -> 5.00 minutes (300s)
+[2022-04-29 12:44:00,852: INFO/MainProcess] beat: Starting...
+[2022-04-29 12:44:00,856: WARNING/MainProcess] DB Reset: Account for new __version__ field
+celery beat v5.1.2 (sun-harmonics) is starting.
+__    -    ... __   -        _
+LocalTime -> 2022-04-29 12:44:00
+Configuration ->
+    . broker -> amqp://guest:**@localhost:5672//
+    . loader -> celery.loaders.app.AppLoader
+    . scheduler -> celery.beat.PersistentScheduler
+    . db -> celerybeat-schedule
+    . logfile -> [stderr]@%INFO
+    . maxinterval -> 5.00 minutes (300s)
+[2022-04-29 13:11:01,531: INFO/MainProcess] beat: Starting...
+[2022-04-29 13:11:11,550: INFO/MainProcess] Scheduler: Sending due task see-you-in-ten-seconds-task (app.tasks.add)
+[2022-04-29 13:11:11,557: ERROR/MainProcess] Message Error: Couldn't apply scheduled task see-you-in-ten-seconds-task: add() missing 2 required positional arguments: 'x' and 'y'
+['  File "/home/ubuntu/Learning/Fero/env/bin/celery", line 11, in <module>\n    sys.exit(main())\n', '  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/__main__.py", line 15, in main\n    sys.exit(_main())\n', '  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/bin/celery.py", line 213, in main\n    return celery(auto_envvar_prefix="CELERY")\n', '  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/click/core.py", line 829, in __call__\n    return self.main(*args, **kwargs)\n', '  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/click/core.py", line 782, in main\n    rv = self.invoke(ctx)\n', '  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/click/core.py", line 1259, in invoke\n    return _process_result(sub_ctx.command.invoke(sub_ctx))\n', '  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/click/core.py", line 1066, in invoke\n    return ctx.invoke(self.callback, **ctx.params)\n', '  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/click/core.py", line 610, in invoke\n    return callback(*args, **kwargs)\n', '  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/click/decorators.py", line 21, in new_func\n    return f(get_current_context(), *args, **kwargs)\n', '  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/bin/base.py", line 133, in caller\n    return f(ctx, *args, **kwargs)\n', '  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/bin/beat.py", line 72, in beat\n    return beat().run()\n', '  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/apps/beat.py", line 77, in run\n    self.start_scheduler()\n', '  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/apps/beat.py", line 105, in start_scheduler\n    service.start()\n', '  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/beat.py", line 645, in start\n    interval = self.scheduler.tick()\n', '  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/beat.py", line 357, in tick\n    self.apply_entry(entry, producer=self.producer)\n', '  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/beat.py", line 290, in apply_entry\n    exc, traceback.format_stack(), exc_info=True)\n']
+Traceback (most recent call last):
+  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/beat.py", line 406, in apply_async
+    **entry.options)
+  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/app/task.py", line 537, in apply_async
+    check_arguments(*(args or ()), **(kwargs or {}))
+TypeError: add() missing 2 required positional arguments: 'x' and 'y'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/beat.py", line 287, in apply_entry
+    result = self.apply_async(entry, producer=producer, advance=False)
+  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/beat.py", line 414, in apply_async
+    entry, exc=exc)), sys.exc_info()[2])
+  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/exceptions.py", line 108, in reraise
+    raise value.with_traceback(tb)
+  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/beat.py", line 406, in apply_async
+    **entry.options)
+  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/app/task.py", line 537, in apply_async
+    check_arguments(*(args or ()), **(kwargs or {}))
+celery.beat.SchedulingError: Couldn't apply scheduled task see-you-in-ten-seconds-task: add() missing 2 required positional arguments: 'x' and 'y'
+[2022-04-29 13:11:21,543: INFO/MainProcess] Scheduler: Sending due task see-you-in-ten-seconds-task (app.tasks.add)
+[2022-04-29 13:11:21,544: ERROR/MainProcess] Message Error: Couldn't apply scheduled task see-you-in-ten-seconds-task: add() missing 2 required positional arguments: 'x' and 'y'
+['  File "/home/ubuntu/Learning/Fero/env/bin/celery", line 11, in <module>\n    sys.exit(main())\n', '  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/__main__.py", line 15, in main\n    sys.exit(_main())\n', '  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/bin/celery.py", line 213, in main\n    return celery(auto_envvar_prefix="CELERY")\n', '  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/click/core.py", line 829, in __call__\n    return self.main(*args, **kwargs)\n', '  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/click/core.py", line 782, in main\n    rv = self.invoke(ctx)\n', '  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/click/core.py", line 1259, in invoke\n    return _process_result(sub_ctx.command.invoke(sub_ctx))\n', '  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/click/core.py", line 1066, in invoke\n    return ctx.invoke(self.callback, **ctx.params)\n', '  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/click/core.py", line 610, in invoke\n    return callback(*args, **kwargs)\n', '  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/click/decorators.py", line 21, in new_func\n    return f(get_current_context(), *args, **kwargs)\n', '  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/bin/base.py", line 133, in caller\n    return f(ctx, *args, **kwargs)\n', '  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/bin/beat.py", line 72, in beat\n    return beat().run()\n', '  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/apps/beat.py", line 77, in run\n    self.start_scheduler()\n', '  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/apps/beat.py", line 105, in start_scheduler\n    service.start()\n', '  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/beat.py", line 645, in start\n    interval = self.scheduler.tick()\n', '  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/beat.py", line 357, in tick\n    self.apply_entry(entry, producer=self.producer)\n', '  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/beat.py", line 290, in apply_entry\n    exc, traceback.format_stack(), exc_info=True)\n']
+Traceback (most recent call last):
+  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/beat.py", line 406, in apply_async
+    **entry.options)
+  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/app/task.py", line 537, in apply_async
+    check_arguments(*(args or ()), **(kwargs or {}))
+TypeError: add() missing 2 required positional arguments: 'x' and 'y'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/beat.py", line 287, in apply_entry
+    result = self.apply_async(entry, producer=producer, advance=False)
+  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/beat.py", line 414, in apply_async
+    entry, exc=exc)), sys.exc_info()[2])
+  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/exceptions.py", line 108, in reraise
+    raise value.with_traceback(tb)
+  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/beat.py", line 406, in apply_async
+    **entry.options)
+  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/app/task.py", line 537, in apply_async
+    check_arguments(*(args or ()), **(kwargs or {}))
+celery.beat.SchedulingError: Couldn't apply scheduled task see-you-in-ten-seconds-task: add() missing 2 required positional arguments: 'x' and 'y'
+[2022-04-29 13:11:31,543: INFO/MainProcess] Scheduler: Sending due task see-you-in-ten-seconds-task (app.tasks.add)
+[2022-04-29 13:11:31,544: ERROR/MainProcess] Message Error: Couldn't apply scheduled task see-you-in-ten-seconds-task: add() missing 2 required positional arguments: 'x' and 'y'
+['  File "/home/ubuntu/Learning/Fero/env/bin/celery", line 11, in <module>\n    sys.exit(main())\n', '  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/__main__.py", line 15, in main\n    sys.exit(_main())\n', '  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/bin/celery.py", line 213, in main\n    return celery(auto_envvar_prefix="CELERY")\n', '  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/click/core.py", line 829, in __call__\n    return self.main(*args, **kwargs)\n', '  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/click/core.py", line 782, in main\n    rv = self.invoke(ctx)\n', '  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/click/core.py", line 1259, in invoke\n    return _process_result(sub_ctx.command.invoke(sub_ctx))\n', '  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/click/core.py", line 1066, in invoke\n    return ctx.invoke(self.callback, **ctx.params)\n', '  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/click/core.py", line 610, in invoke\n    return callback(*args, **kwargs)\n', '  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/click/decorators.py", line 21, in new_func\n    return f(get_current_context(), *args, **kwargs)\n', '  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/bin/base.py", line 133, in caller\n    return f(ctx, *args, **kwargs)\n', '  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/bin/beat.py", line 72, in beat\n    return beat().run()\n', '  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/apps/beat.py", line 77, in run\n    self.start_scheduler()\n', '  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/apps/beat.py", line 105, in start_scheduler\n    service.start()\n', '  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/beat.py", line 645, in start\n    interval = self.scheduler.tick()\n', '  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/beat.py", line 357, in tick\n    self.apply_entry(entry, producer=self.producer)\n', '  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/beat.py", line 290, in apply_entry\n    exc, traceback.format_stack(), exc_info=True)\n']
+Traceback (most recent call last):
+  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/beat.py", line 406, in apply_async
+    **entry.options)
+  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/app/task.py", line 537, in apply_async
+    check_arguments(*(args or ()), **(kwargs or {}))
+TypeError: add() missing 2 required positional arguments: 'x' and 'y'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/beat.py", line 287, in apply_entry
+    result = self.apply_async(entry, producer=producer, advance=False)
+  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/beat.py", line 414, in apply_async
+    entry, exc=exc)), sys.exc_info()[2])
+  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/exceptions.py", line 108, in reraise
+    raise value.with_traceback(tb)
+  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/beat.py", line 406, in apply_async
+    **entry.options)
+  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/app/task.py", line 537, in apply_async
+    check_arguments(*(args or ()), **(kwargs or {}))
+celery.beat.SchedulingError: Couldn't apply scheduled task see-you-in-ten-seconds-task: add() missing 2 required positional arguments: 'x' and 'y'
+[2022-04-29 13:11:41,543: INFO/MainProcess] Scheduler: Sending due task see-you-in-ten-seconds-task (app.tasks.add)
+[2022-04-29 13:11:41,544: ERROR/MainProcess] Message Error: Couldn't apply scheduled task see-you-in-ten-seconds-task: add() missing 2 required positional arguments: 'x' and 'y'
+['  File "/home/ubuntu/Learning/Fero/env/bin/celery", line 11, in <module>\n    sys.exit(main())\n', '  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/__main__.py", line 15, in main\n    sys.exit(_main())\n', '  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/bin/celery.py", line 213, in main\n    return celery(auto_envvar_prefix="CELERY")\n', '  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/click/core.py", line 829, in __call__\n    return self.main(*args, **kwargs)\n', '  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/click/core.py", line 782, in main\n    rv = self.invoke(ctx)\n', '  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/click/core.py", line 1259, in invoke\n    return _process_result(sub_ctx.command.invoke(sub_ctx))\n', '  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/click/core.py", line 1066, in invoke\n    return ctx.invoke(self.callback, **ctx.params)\n', '  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/click/core.py", line 610, in invoke\n    return callback(*args, **kwargs)\n', '  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/click/decorators.py", line 21, in new_func\n    return f(get_current_context(), *args, **kwargs)\n', '  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/bin/base.py", line 133, in caller\n    return f(ctx, *args, **kwargs)\n', '  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/bin/beat.py", line 72, in beat\n    return beat().run()\n', '  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/apps/beat.py", line 77, in run\n    self.start_scheduler()\n', '  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/apps/beat.py", line 105, in start_scheduler\n    service.start()\n', '  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/beat.py", line 645, in start\n    interval = self.scheduler.tick()\n', '  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/beat.py", line 357, in tick\n    self.apply_entry(entry, producer=self.producer)\n', '  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/beat.py", line 290, in apply_entry\n    exc, traceback.format_stack(), exc_info=True)\n']
+Traceback (most recent call last):
+  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/beat.py", line 406, in apply_async
+    **entry.options)
+  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/app/task.py", line 537, in apply_async
+    check_arguments(*(args or ()), **(kwargs or {}))
+TypeError: add() missing 2 required positional arguments: 'x' and 'y'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/beat.py", line 287, in apply_entry
+    result = self.apply_async(entry, producer=producer, advance=False)
+  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/beat.py", line 414, in apply_async
+    entry, exc=exc)), sys.exc_info()[2])
+  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/exceptions.py", line 108, in reraise
+    raise value.with_traceback(tb)
+  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/beat.py", line 406, in apply_async
+    **entry.options)
+  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/app/task.py", line 537, in apply_async
+    check_arguments(*(args or ()), **(kwargs or {}))
+celery.beat.SchedulingError: Couldn't apply scheduled task see-you-in-ten-seconds-task: add() missing 2 required positional arguments: 'x' and 'y'
+[2022-04-29 13:11:51,543: INFO/MainProcess] Scheduler: Sending due task see-you-in-ten-seconds-task (app.tasks.add)
+[2022-04-29 13:11:51,544: ERROR/MainProcess] Message Error: Couldn't apply scheduled task see-you-in-ten-seconds-task: add() missing 2 required positional arguments: 'x' and 'y'
+['  File "/home/ubuntu/Learning/Fero/env/bin/celery", line 11, in <module>\n    sys.exit(main())\n', '  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/__main__.py", line 15, in main\n    sys.exit(_main())\n', '  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/bin/celery.py", line 213, in main\n    return celery(auto_envvar_prefix="CELERY")\n', '  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/click/core.py", line 829, in __call__\n    return self.main(*args, **kwargs)\n', '  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/click/core.py", line 782, in main\n    rv = self.invoke(ctx)\n', '  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/click/core.py", line 1259, in invoke\n    return _process_result(sub_ctx.command.invoke(sub_ctx))\n', '  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/click/core.py", line 1066, in invoke\n    return ctx.invoke(self.callback, **ctx.params)\n', '  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/click/core.py", line 610, in invoke\n    return callback(*args, **kwargs)\n', '  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/click/decorators.py", line 21, in new_func\n    return f(get_current_context(), *args, **kwargs)\n', '  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/bin/base.py", line 133, in caller\n    return f(ctx, *args, **kwargs)\n', '  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/bin/beat.py", line 72, in beat\n    return beat().run()\n', '  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/apps/beat.py", line 77, in run\n    self.start_scheduler()\n', '  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/apps/beat.py", line 105, in start_scheduler\n    service.start()\n', '  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/beat.py", line 645, in start\n    interval = self.scheduler.tick()\n', '  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/beat.py", line 357, in tick\n    self.apply_entry(entry, producer=self.producer)\n', '  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/beat.py", line 290, in apply_entry\n    exc, traceback.format_stack(), exc_info=True)\n']
+Traceback (most recent call last):
+  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/beat.py", line 406, in apply_async
+    **entry.options)
+  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/app/task.py", line 537, in apply_async
+    check_arguments(*(args or ()), **(kwargs or {}))
+TypeError: add() missing 2 required positional arguments: 'x' and 'y'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/beat.py", line 287, in apply_entry
+    result = self.apply_async(entry, producer=producer, advance=False)
+  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/beat.py", line 414, in apply_async
+    entry, exc=exc)), sys.exc_info()[2])
+  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/exceptions.py", line 108, in reraise
+    raise value.with_traceback(tb)
+  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/beat.py", line 406, in apply_async
+    **entry.options)
+  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/app/task.py", line 537, in apply_async
+    check_arguments(*(args or ()), **(kwargs or {}))
+celery.beat.SchedulingError: Couldn't apply scheduled task see-you-in-ten-seconds-task: add() missing 2 required positional arguments: 'x' and 'y'
+[2022-04-29 13:12:01,543: INFO/MainProcess] Scheduler: Sending due task see-you-in-ten-seconds-task (app.tasks.add)
+[2022-04-29 13:12:01,544: ERROR/MainProcess] Message Error: Couldn't apply scheduled task see-you-in-ten-seconds-task: add() missing 2 required positional arguments: 'x' and 'y'
+['  File "/home/ubuntu/Learning/Fero/env/bin/celery", line 11, in <module>\n    sys.exit(main())\n', '  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/__main__.py", line 15, in main\n    sys.exit(_main())\n', '  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/bin/celery.py", line 213, in main\n    return celery(auto_envvar_prefix="CELERY")\n', '  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/click/core.py", line 829, in __call__\n    return self.main(*args, **kwargs)\n', '  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/click/core.py", line 782, in main\n    rv = self.invoke(ctx)\n', '  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/click/core.py", line 1259, in invoke\n    return _process_result(sub_ctx.command.invoke(sub_ctx))\n', '  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/click/core.py", line 1066, in invoke\n    return ctx.invoke(self.callback, **ctx.params)\n', '  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/click/core.py", line 610, in invoke\n    return callback(*args, **kwargs)\n', '  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/click/decorators.py", line 21, in new_func\n    return f(get_current_context(), *args, **kwargs)\n', '  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/bin/base.py", line 133, in caller\n    return f(ctx, *args, **kwargs)\n', '  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/bin/beat.py", line 72, in beat\n    return beat().run()\n', '  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/apps/beat.py", line 77, in run\n    self.start_scheduler()\n', '  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/apps/beat.py", line 105, in start_scheduler\n    service.start()\n', '  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/beat.py", line 645, in start\n    interval = self.scheduler.tick()\n', '  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/beat.py", line 357, in tick\n    self.apply_entry(entry, producer=self.producer)\n', '  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/beat.py", line 290, in apply_entry\n    exc, traceback.format_stack(), exc_info=True)\n']
+Traceback (most recent call last):
+  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/beat.py", line 406, in apply_async
+    **entry.options)
+  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/app/task.py", line 537, in apply_async
+    check_arguments(*(args or ()), **(kwargs or {}))
+TypeError: add() missing 2 required positional arguments: 'x' and 'y'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/beat.py", line 287, in apply_entry
+    result = self.apply_async(entry, producer=producer, advance=False)
+  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/beat.py", line 414, in apply_async
+    entry, exc=exc)), sys.exc_info()[2])
+  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/exceptions.py", line 108, in reraise
+    raise value.with_traceback(tb)
+  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/beat.py", line 406, in apply_async
+    **entry.options)
+  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/app/task.py", line 537, in apply_async
+    check_arguments(*(args or ()), **(kwargs or {}))
+celery.beat.SchedulingError: Couldn't apply scheduled task see-you-in-ten-seconds-task: add() missing 2 required positional arguments: 'x' and 'y'
+[2022-04-29 13:12:11,543: INFO/MainProcess] Scheduler: Sending due task see-you-in-ten-seconds-task (app.tasks.add)
+[2022-04-29 13:12:11,544: ERROR/MainProcess] Message Error: Couldn't apply scheduled task see-you-in-ten-seconds-task: add() missing 2 required positional arguments: 'x' and 'y'
+['  File "/home/ubuntu/Learning/Fero/env/bin/celery", line 11, in <module>\n    sys.exit(main())\n', '  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/__main__.py", line 15, in main\n    sys.exit(_main())\n', '  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/bin/celery.py", line 213, in main\n    return celery(auto_envvar_prefix="CELERY")\n', '  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/click/core.py", line 829, in __call__\n    return self.main(*args, **kwargs)\n', '  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/click/core.py", line 782, in main\n    rv = self.invoke(ctx)\n', '  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/click/core.py", line 1259, in invoke\n    return _process_result(sub_ctx.command.invoke(sub_ctx))\n', '  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/click/core.py", line 1066, in invoke\n    return ctx.invoke(self.callback, **ctx.params)\n', '  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/click/core.py", line 610, in invoke\n    return callback(*args, **kwargs)\n', '  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/click/decorators.py", line 21, in new_func\n    return f(get_current_context(), *args, **kwargs)\n', '  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/bin/base.py", line 133, in caller\n    return f(ctx, *args, **kwargs)\n', '  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/bin/beat.py", line 72, in beat\n    return beat().run()\n', '  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/apps/beat.py", line 77, in run\n    self.start_scheduler()\n', '  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/apps/beat.py", line 105, in start_scheduler\n    service.start()\n', '  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/beat.py", line 645, in start\n    interval = self.scheduler.tick()\n', '  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/beat.py", line 357, in tick\n    self.apply_entry(entry, producer=self.producer)\n', '  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/beat.py", line 290, in apply_entry\n    exc, traceback.format_stack(), exc_info=True)\n']
+Traceback (most recent call last):
+  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/beat.py", line 406, in apply_async
+    **entry.options)
+  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/app/task.py", line 537, in apply_async
+    check_arguments(*(args or ()), **(kwargs or {}))
+TypeError: add() missing 2 required positional arguments: 'x' and 'y'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/beat.py", line 287, in apply_entry
+    result = self.apply_async(entry, producer=producer, advance=False)
+  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/beat.py", line 414, in apply_async
+    entry, exc=exc)), sys.exc_info()[2])
+  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/exceptions.py", line 108, in reraise
+    raise value.with_traceback(tb)
+  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/beat.py", line 406, in apply_async
+    **entry.options)
+  File "/home/ubuntu/Learning/Fero/env/lib/python3.6/site-packages/celery/app/task.py", line 537, in apply_async
+    check_arguments(*(args or ()), **(kwargs or {}))
+celery.beat.SchedulingError: Couldn't apply scheduled task see-you-in-ten-seconds-task: add() missing 2 required positional arguments: 'x' and 'y'
+celery beat v5.1.2 (sun-harmonics) is starting.
+__    -    ... __   -        _
+LocalTime -> 2022-04-29 13:11:01
+Configuration ->
+    . broker -> amqp://guest:**@localhost:5672//
+    . loader -> celery.loaders.app.AppLoader
+    . scheduler -> celery.beat.PersistentScheduler
+    . db -> celerybeat-schedule
+    . logfile -> [stderr]@%INFO
+    . maxinterval -> 5.00 minutes (300s)
+[2022-04-29 13:12:19,812: INFO/MainProcess] beat: Starting...
+[2022-04-29 13:12:21,547: INFO/MainProcess] Scheduler: Sending due task see-you-in-ten-seconds-task (app.tasks.add)
+[2022-04-29 13:12:31,544: INFO/MainProcess] Scheduler: Sending due task see-you-in-ten-seconds-task (app.tasks.add)
+[2022-04-29 13:12:41,544: INFO/MainProcess] Scheduler: Sending due task see-you-in-ten-seconds-task (app.tasks.add)
+[2022-04-29 13:12:51,544: INFO/MainProcess] Scheduler: Sending due task see-you-in-ten-seconds-task (app.tasks.add)
+[2022-04-29 13:13:01,544: INFO/MainProcess] Scheduler: Sending due task see-you-in-ten-seconds-task (app.tasks.add)
+[2022-04-29 13:13:11,544: INFO/MainProcess] Scheduler: Sending due task see-you-in-ten-seconds-task (app.tasks.add)
+[2022-04-29 13:13:21,544: INFO/MainProcess] Scheduler: Sending due task see-you-in-ten-seconds-task (app.tasks.add)
+celery beat v5.1.2 (sun-harmonics) is starting.
+__    -    ... __   -        _
+LocalTime -> 2022-04-29 13:12:19
+Configuration ->
+    . broker -> amqp://guest:**@localhost:5672//
+    . loader -> celery.loaders.app.AppLoader
+    . scheduler -> celery.beat.PersistentScheduler
+    . db -> celerybeat-schedule
+    . logfile -> [stderr]@%INFO
+    . maxinterval -> 5.00 minutes (300s)

@@ -1,6 +1,8 @@
 """ model file """
 from datetime import date
+from trace import Trace
 from django.db import models
+from auditlog.registry import auditlog
 
 # Create your models here.
 
@@ -100,3 +102,14 @@ class ModelB(models.Model):
 class ModelA(models.Model):
     model_b = models.ForeignKey(to=ModelB, on_delete=models.CASCADE)
     content = models.CharField(max_length=128)
+
+
+auditlog.register(Student)
+auditlog.register(Course)
+auditlog.register(ModelB)
+auditlog.register(ModelC)
+auditlog.register(ModelA)
+auditlog.register(Resource)
+auditlog.register(Album)
+auditlog.register(Track)
+auditlog.register(Movie)

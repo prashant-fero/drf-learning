@@ -14,7 +14,8 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 
-from django.urls import path
+
+from django.urls import path, include
 
 from app.models import ModelA
 
@@ -33,9 +34,17 @@ from .views import (
     HelloView,
     ResourceListView,
     ModelAListView,
+    ModelAViewSet,
+    home,
 )
+from rest_framework.routers import DefaultRouter, SimpleRouter
+
+router = SimpleRouter()
+router.register("model", ModelAViewSet)
 
 urlpatterns = [
+    path("api/", include(router.urls)),
+    path("home/", home),
     path("student/", student_view, name="student_list"),
     path("student/<int:pk>/", student_detail_view, name="student_detail"),
     # Apiview
@@ -51,4 +60,5 @@ urlpatterns = [
     path("hello/", HelloView.as_view(), name="hello"),
     path("resource/", ResourceListView.as_view(), name="resource"),
     path("modela/", ModelAListView.as_view(), name="model_a"),
+    path("", include(router.urls)),
 ]

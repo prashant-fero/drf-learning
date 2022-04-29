@@ -1,0 +1,110 @@
+[
+{
+  "model": "auth.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$260000$pGMt6EOV9QYH6cfc6wQoxo$mWkrK6YvE3b6NSXVlT35964pj5TXQd7YhRdMA0L/ufw=",
+    "last_login": "2022-04-28T08:39:01.932Z",
+    "is_superuser": true,
+    "username": "prashant",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2022-04-25T12:10:29.089Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 2,
+  "fields": {
+    "password": "123",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "mit",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2022-04-26T13:31:21.021Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 3,
+  "fields": {
+    "password": "123",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "meet",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2022-04-26T13:31:48.320Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 4,
+  "fields": {
+    "password": "123",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "yash",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2022-04-27T05:40:31.582Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 5,
+  "fields": {
+    "password": "123",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "hardik",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2022-04-27T05:41:09.711Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 6,
+  "fields": {
+    "password": "123",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "mayur",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2022-04-27T12:12:04.369Z",
+    "groups": [],
+    "user_permissions": []
+  }
+}
+]
