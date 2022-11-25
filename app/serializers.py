@@ -5,7 +5,7 @@ from rest_framework import serializers
 from django.contrib.auth.models import User
 from rest_framework.validators import UniqueValidator
 
-from .models import Student, Course, Movie, Album, Track, Resource, ModelA
+from .models import Student, Course, Movie, Album, Track, Resource, ModelA, Item, Ticket, TicketAttached, StudentData
 
 
 class StudentSerializer(serializers.ModelSerializer):
@@ -173,3 +173,38 @@ class ModelASerializer(serializers.ModelSerializer):
         model = ModelA
         fields = "__all__"
         depth = 2
+
+
+class ItemSerializer(serializers.ModelSerializer):
+
+    student = serializers.SlugRelatedField(
+        read_only=True,
+        slug_field='id',
+    )
+
+    class Meta:
+        model = Item
+        fields = "__all__"
+
+class TicketSerializer(serializers.ModelSerializer):
+
+    def create(self, validated_data):
+        print("create")
+        ticket = super(TicketSerializer, self).create(validated_data)
+        return ticket
+
+    def update(self, instance, validated_data):
+        print("update ")
+        instance = super(TicketSerializer, self).update(instance, validated_data)
+        return instance
+
+    class Meta:
+        model = Ticket
+        fields = "__all__"
+
+
+
+class StudentDataSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = StudentData
+        fields = "__all__"
