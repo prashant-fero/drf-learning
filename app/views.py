@@ -1,5 +1,10 @@
 """ view files """
+from unittest import result
 from django.http import JsonResponse
+from django.shortcuts import render
+from django.conf import settings
+from django.core.mail import send_mail
+from django.utils.safestring import mark_safe
 from rest_framework.response import Response
 from rest_framework.decorators import api_view
 from rest_framework import status
@@ -8,13 +13,11 @@ from rest_framework.views import APIView
 from rest_framework.authentication import SessionAuthentication, BasicAuthentication
 from rest_framework.permissions import IsAuthenticated
 from rest_framework import filters
-from app.tasks import add
-from django_filters.rest_framework import DjangoFilterBackend
 from django.contrib.auth.models import User
 from rest_framework import pagination
 from rest_framework import viewsets
 from rest_framework.decorators import action
-
+from app.custom_filter import DynamicSearchFilter
 
 # custom
 from .serializers import (
@@ -28,8 +31,12 @@ from .serializers import (
     MovieSerializer,
     TrackSerializer,
     ResourceSerializer,
+    ItemSerializer,
+    TicketSerializer,
+    StudentDataSerializer
 )
-from .models import ModelA, Student, Course, Movie, Album, Track, Resource
+from .models import ModelA, Student, Course, Movie, Album, Ticket, Track, Resource, Item, StudentData
+
 
 # Create your views here.
 @api_view(["GET", "POST"])
@@ -55,8 +62,7 @@ def student_detail_view(request, pk):
     """student detail view"""
     try:
         student = Student.objects.get(pk=pk)
-        print("query parameter ", request.parsers)
-        print("content type ", request.content_type)
+
 
     except Student.DoesNotExist:
         return Response(status=status.HTTP_404_NOT_FOUND)
@@ -140,9 +146,7 @@ class ListCreateMovieAPIView(generics.ListCreateAPIView):
         serializer.save(creator=self.request.user)
 
 
-class UserListApiView(
-    generics.ListAPIView,
-):
+class UserListApiView(generics.ListAPIView):
     """user list api"""
 
     serializer_class = UserModelSerializer
@@ -150,19 +154,16 @@ class UserListApiView(
 
 
 class AlbumListView(generics.ListAPIView):
-
     serializer_class = AlbumSerializer
     queryset = Album.objects.all()
 
 
 class MoviesListView(generics.ListAPIView):
-
     serializer_class = MovieSerializer
     queryset = Movie.objects.all()
 
 
 class TrackListView(generics.ListAPIView):
-
     serializer_class = TrackSerializer
     queryset = Track.objects.all()
 
@@ -194,17 +195,16 @@ class ResourceListView(generics.ListCreateAPIView):
     # filter_backends = [DjangoFilterBackend]
     # filterset_fields = ["title"]
     filter_backends = [filters.SearchFilter]
-    search_fields = ["title", "liked_by__username"]
+    search_fields = ["title",
+                     "liked_by__username"]
 
 
 class ModelAListView(generics.ListAPIView):
-
     serializer_class = ModelASerializer
     queryset = ModelA.objects.all()
 
 
 class ModelAViewSet(viewsets.ModelViewSet):
-
     serializer_class = ModelASerializer
     queryset = ModelA.objects.all()
 
@@ -227,6 +227,51 @@ class ModelAViewSet(viewsets.ModelViewSet):
         return Response({"id": pk})
 
 
+class StudentViewSet(viewsets.ModelViewSet):
+    """ student all data list """
+
+    serializer_class = UserSerializer
+    queryset = User.objects.all()
+
+
+class ItemViewSet(viewsets.ModelViewSet):
+    serializer_class = ItemSerializer
+    queryset = Item.objects.all()
+
+
+class TicketViewSet(viewsets.ModelViewSet):
+    serializer_class = TicketSerializer
+    queryset = Ticket.objects.all()
+
+
+class StudentDataViewSet(viewsets.ModelViewSet):
+    serializer_class = StudentDataSerializer
+    queryset = StudentData.objects.all()
+    filter_backends = (DynamicSearchFilter,)
+
+
 def home(request):
-    add.delay(3, 2)
-    return JsonResponse({"request": "ok"})
+    data = {
+        "username": "Prashant",
+        "password": "sadfsdf",
+    }
+    result = dict()
+    result["parsed_data"] = '''
+               <p>Dear {customer}, </p>
+                <p>Congratulations ! Welcome to Sky Express . Please use the below credentials to sign in. </p>
+                <p><span class="text-danger">Username:</span> {username}</p>
+                <p><span class="text-danger">Password:</span> {password}</p>
+                <p><span class="text-danger">Login Link:</span> <a href="https://www.skyexpressinternational.com/Login" style="text-decoration: none;">https://www.skyexpressinternational.com/Login</a></p>
+                <p><b>Note:</b>You can reset your password once you login using the above credentials.</p>
+                <p>If you face any issue, please click on the link or email us at support@skyexpress.ae with your account code.</p>
+            '''.format(customer="Prashant", username="prashant", password="123pra123")
+
+    return render(request, "email.html")
+    # subject = 'Test Mail'
+    # message = f'test mail'
+    # email_from = settings.EMAIL_HOST_USER
+    # recipient_list = ["bhaliyakishan80@gmail.com"]
+    # result = send_mail(subject, message, email_from, recipient_list, fail_silently=False)
+    # print("email result ",result)
+    # add.delay(3, 2)
+    # return JsonResponse({"request": "ok"})

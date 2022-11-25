@@ -21,9 +21,11 @@ from django.conf.urls.static import static
 from app.token import CustomAuthToken
 
 urlpatterns = [
-    path("admin/", admin.site.urls),
     path("", include("app.urls")),
     path("api-token-auth/", CustomAuthToken.as_view(), name="api_token_auth"),
+    path('metrics/', include('django_prometheus.urls')),
+    # path('admin/', include('admin_honeypot.urls', namespace='admin_honeypot')),
+    path('admin/', admin.site.urls),
 ]
 
 if settings.DEBUG:

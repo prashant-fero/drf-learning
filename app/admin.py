@@ -12,6 +12,8 @@ from .models import (
     ModelA,
     ModelB,
     ModelC,
+    Item,
+    StudentData
 )
 
 # Register your models here.
@@ -24,3 +26,5 @@ admin.site.register(Resource)
 admin.site.register(ModelA)
 admin.site.register(ModelB)
 admin.site.register(ModelC)
+admin.site.register(Item)
+admin.site.register(StudentData)

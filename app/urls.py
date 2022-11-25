@@ -35,12 +35,20 @@ from .views import (
     ResourceListView,
     ModelAListView,
     ModelAViewSet,
-    home,
+    StudentViewSet,
+    ItemViewSet,
+    TicketViewSet,
+    StudentDataViewSet,
+    home
 )
 from rest_framework.routers import DefaultRouter, SimpleRouter
 
 router = SimpleRouter()
 router.register("model", ModelAViewSet)
+# router.register("student-data", StudentViewSet)
+router.register("item_data", ItemViewSet)
+router.register("ticket", TicketViewSet)
+router.register("student-data", StudentDataViewSet)
 
 urlpatterns = [
     path("api/", include(router.urls)),
